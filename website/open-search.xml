@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /open-search.xml
+---
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+ <ShortName>devops.ga</ShortName>
+ <Description>Use Google to search devops.ga</Description>
+ <Tags>devops.ga</Tags>
+ <Url type="text/html"
+      template="http://www.google.com/search?as_sitesearch=devops.ga&amp;q={searchTerms}"/>
+</OpenSearchDescription>
