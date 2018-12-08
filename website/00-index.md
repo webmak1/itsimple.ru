@@ -37,7 +37,6 @@ permalink: /
 Ссылка на репо внизу:
 
     gem install jekyll
-    gem install jekyll-sitemap
 
 (Вроде достаточно get install)
 
