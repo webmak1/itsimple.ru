@@ -8,15 +8,10 @@ permalink: /suggestions/
 
 <br/>
 
-### Предложение 1
+### [Stephen Grider] Docker and Kubernetes: The Complete Guide [2018, ENG]
 
+Достаточно интересный и практический курс по работе с контейнерами. Я научился чему-то новому. 
 
-Как насчет того, чтобы коллективно посмотреть и разобрать материалы из курса, что лежит на рутрекере?
+Особенно интересно тем, кто работает с современным javascript.
 
-
-### [udemy.com] Docker and Kubernetes: The Complete Guide [2018, ENG, HQ]
-
-
-Stephen Grider - делает свои материалы достаточно подробными и понятными.
-
-Можно тратить пару часов в неделю.
+<a href="https://github.com/marley-nodejs/Docker-and-Kubernetes-The-Complete-Guide">Посмотреть пример</a>
