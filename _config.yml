@@ -3,11 +3,10 @@ title: DEVOPS
 
 description: DEVOPS 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://devops.ga" # the base hostname & protocol for your site
+url: "https://itsimple.ru" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-
 
 gems:
   - jekyll-sitemap

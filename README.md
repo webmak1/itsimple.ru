@@ -1,1 +1,1 @@
-# Исходники сайта [devops.ga](https://devops.ga)
+# Исходники сайта [itsimple.ru](https://itsimple.ru)
