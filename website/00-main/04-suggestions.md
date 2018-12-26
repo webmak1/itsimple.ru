@@ -35,3 +35,5 @@ permalink: /suggestions/
 <br/>
 
 ### Docker for DevOps: From Development to Production
+
+Ссылка на материал в теме по девопс от отус на руктрекере
