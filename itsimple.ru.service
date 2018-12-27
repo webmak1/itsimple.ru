@@ -1,0 +1,21 @@
+[Unit]
+Description=itsimple.ru
+
+Requires=docker.service
+After=docker.service
+
+[Service]
+
+Restart=always
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill itsimple.ru
+ExecStartPre=-/usr/bin/docker rm itsimple.ru
+ExecStartPre=-/usr/bin/docker pull marley/itsimple.ru:latest
+ExecStart=/bin/sh -c '/usr/bin/docker run --name itsimple.ru   \
+ -p 4014:80                        \
+ marley/itsimple.ru'
+ExecStop=-/usr/bin/docker kill itsimple.ru
+ExecStop=-/usr/bin/docker rm itsimple.ru
+
+[Install]
+WantedBy=multi-user.target
