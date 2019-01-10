@@ -8,6 +8,14 @@ permalink: /otus-devops-repos/
 
 # Репо студентов DEVOPS от Otus
 
-### Nevgin
+<br/>
+
+### Alexey Nevgin
 
 https://github.com/nevgin/otus-learning
+
+<br/>
+
+### Ed Vegas
+
+https://github.com/edvegas/gcloud-app
