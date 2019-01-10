@@ -17,3 +17,5 @@ permalink: /sitemap/
 ### [Репо студентов DEVOPS от Otus](/otus-devops-repos/)
 
 ### [Learning DevOps tools with World IT Experts (pdf)](/files/learn-devops.pdf)
+
+### [Как Xenos Aurum ходил собеседоваться на позицию DEVOPS](/devops-interview/)
