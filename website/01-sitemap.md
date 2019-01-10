@@ -15,3 +15,5 @@ permalink: /sitemap/
 ### [BitcoinABC в docker контейнере](https://github.com/Bitcoin-ABC/bitcoinabc.org)
 
 ### [Репо студентов DEVOPS от Otus](/otus-devops-repos/)
+
+### [Learning DevOps tools with World IT Experts (pdf)](/files/learn-devops.pdf)
