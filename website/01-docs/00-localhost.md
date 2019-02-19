@@ -1,30 +1,13 @@
 ---
 layout: page
-title: Развернуть локально у себя
+title: Запустить локально у себя
 permalink: /localhost/
 ---
 
 <br/>
 
-# Развернуть локально у себя (Обновлю как сделать лучше, если это кому-нибудь будет нужно.)
+# Запустить локально у себя
 
+Установить docker-compose. Войти в каталог с проектом.
 
-**Инсталляция ПО:**
-
-Необходим установленный ruby on rails (Также как в уроках от otus devops).
-
-Ссылка на репо внизу:
-
-    gem install jekyll
-
-(Вроде достаточно get install)
-
-<br/>
-
-**Для запуска:**
-
-    jekyll serve --watch --host 0.0.0.0 --port 8080
-
-Или
-
-    JEKYLL_ENV=production bundle exec jekyll serve --host 0.0.0.0 --port 8080
+    $ docker-compose up
