@@ -14,8 +14,6 @@ permalink: /sitemap/
 
 ### [Как Xenos Aurum ходил собеседоваться на позицию DEVOPS](/devops-interview/)
 
-### [Предложения что посмотреть / почитать](/suggestions/)
-
 <br/>
 
 ## Возможно полезные материалы
@@ -27,3 +25,11 @@ permalink: /sitemap/
 ### [BitcoinABC в docker контейнере](https://github.com/Bitcoin-ABC/bitcoinabc.org)
 
 ### [Learning DevOps tools with World IT Experts (pdf)](/files/learn-devops.pdf)
+
+<br/>
+
+## Почитать / Посмотреть
+
+Марко Лукша: Kubernetes в действии pdf rus 2019
+
+### [Предложения что посмотреть / почитать](/suggestions/)
