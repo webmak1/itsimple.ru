@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Запустить приложение с котиками одной командой
-permalink: /voting-game/
+permalink: /cats-app/
 ---
 
 <br/>
@@ -10,7 +10,7 @@ permalink: /voting-game/
 
 **Само приложение:**
 
-https://github.com/marley-nodejs/voting-game
+https://github.com/marley-nodejs/cats-app
 
 <br/>
 
@@ -20,5 +20,7 @@ docker должен быть установлен!!!
 
     $ docker run -it \
     -p 80:8080 \
-    --name nodejs-voting-game \
-    marley/nodejs-voting-game
+    --name nodejs-cats-app \
+    marley/nodejs-cats-app
+
+http://localhost
