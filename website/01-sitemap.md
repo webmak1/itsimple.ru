@@ -6,9 +6,9 @@ permalink: /sitemap/
 
 # Карта Сайта
 
-### [Запустить локально у себя](/localhost/)
+### [Запустить локально itsimple.ru у себя](/examples/itsimple/)
 
-### [Запустить приложение с котиками одной командой](/cats-app/)
+### [Запустить приложение с котиками одной командой](/examples/cats-app/)
 
 <br/>
 
@@ -33,3 +33,11 @@ permalink: /sitemap/
 ### [Предложения что почитать / посмотреть](/suggestions/)
 
 ### [Learning DevOps tools with World IT Experts (pdf)](/files/learn-devops.pdf)
+
+### YouTube записи, скрытые от тех у кого нет ссылок:
+
+    https://youtu.be/NYJsP7bvNHU
+    https://youtu.be/C8D1_acR4SM
+    https://youtu.be/vtDvgAl3gVA
+    https://youtu.be/fqgGVnuHye8
+    https://youtu.be/s04UyNeakSY
