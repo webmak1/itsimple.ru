@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Разворачиваем Gitlab с помощью Ansible
+title: Разворачиваем Gitlab с помощью Ansible (не работает, нужна помощь!)
 permalink: /devops/ansible/gitlab/
 ---
 
-# Разворачиваем Gitlab с помощью Ansible (нужно разобраться с ошибкой)
+# Разворачиваем Gitlab с помощью Ansible (не работает, нужна помощь!)
 
 Делаю  
 15.03.2019

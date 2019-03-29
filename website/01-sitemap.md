@@ -14,7 +14,13 @@ permalink: /sitemap/
 
 ## Ansible
 
-### [Разворачиваем Gitlab с помощью Ansible](/devops/ansible/gitlab/)
+### [Разворачиваем Gitlab с помощью Ansible (не работает, нужна помощь!)](/devops/ansible/gitlab/)
+
+<br/>
+
+## Kubernetes
+
+### [Single Master Kubernetes Cluster в виртуальных машинах (vagrant, kubeadm, cubectl)](/linux/servers/containers/kubernetes/kubeadm/single-master/)
 
 <br/>
 
