@@ -20,7 +20,7 @@ permalink: /sitemap/
 
 ## Kubernetes
 
-### [Single Master Kubernetes Cluster в виртуальных машинах (vagrant, kubeadm, kubectl)](/linux/servers/containers/kubernetes/kubeadm/single-master/)
+### [Kubernetes](/linux/servers/containers/kubernetes/)
 
 <br/>
 
