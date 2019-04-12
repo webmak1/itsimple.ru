@@ -14,7 +14,7 @@ permalink: /sitemap/
 
 ## Ansible
 
-### [Разворачиваем Gitlab с помощью Ansible (не работает, нужна помощь!)](/devops/ansible/gitlab/)
+### [Разворачиваем Gitlab с помощью Ansible](/devops/ansible/gitlab/)
 
 <br/>
 
