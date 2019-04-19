@@ -15,3 +15,7 @@ permalink: /linux/servers/containers/kubernetes/
 <br/>
 
 ### [Single Master Kubernetes Cluster в виртуальных машинах (vagrant, kubeadm, kubectl)](/linux/servers/containers/kubernetes/single-master/)
+
+<br/>
+
+### [KubernetesInc Ingress Nginx (Вопрос по настройке)](/linux/servers/containers/kubernetes/single-master/kubernetesinc-ingress-nginx/)
