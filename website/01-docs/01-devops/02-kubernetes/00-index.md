@@ -18,4 +18,4 @@ permalink: /linux/servers/containers/kubernetes/
 
 <br/>
 
-### [KubernetesInc Ingress Nginx (Вопрос по настройке)](/linux/servers/containers/kubernetes/single-master/kubernetesinc-ingress-nginx/)
+### [KubernetesInc Ingress Nginx (Вопрос по настройке)](/linux/servers/containers/kubernetes/kubeadm/ingress/kubernetesinc-ingress-nginx/)
