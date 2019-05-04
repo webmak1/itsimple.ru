@@ -22,7 +22,7 @@ permalink: /
 
 С момента начала сидения в чате, мне пришлось освоить Ansible, Kubernetes.
 
-Хочется как-нибудь разобраться с weblogic в kubernetes кластере. И есть один java чемпион, запиливший курс по <a href="https://bitbucket.org/javadev-org/containerized-java-ee-8-apps-using-docker-and-kubernetes/src/master/">Java EE приложению в kubernetes</a>. Но у меня ничего не заработало (потому, что он долб@#\$%^). Хотелось бы, чтобы кто-то тоже покопался.
+Хочется как-нибудь разобраться с weblogic в kubernetes кластере. И есть один java чемпион, запиливший курс по <a href="https://bitbucket.org/javadev-org/containerized-java-ee-8-apps-using-docker-and-kubernetes/src/master/" rel="nofollow">Java EE приложению в kubernetes</a>. Но у меня ничего не заработало (потому, что он долб@#\$%^). Хотелось бы, чтобы кто-то тоже покопался.
 
 <br/>
 

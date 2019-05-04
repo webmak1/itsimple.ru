@@ -24,6 +24,8 @@ permalink: /sitemap/
 
 ### [BitcoinABC в docker контейнере](https://github.com/Bitcoin-ABC/bitcoinabc.org)
 
+### [Бесплатная версия Oracle в Docker](https://oracle-dba.ru/database/installation/single-instance/simple/linux/docker/oracle/11/xe/)
+
 <br/>
 
 ## Kubernetes
@@ -32,13 +34,13 @@ permalink: /sitemap/
 
 <br/>
 
-## Возможно полезные материалы
+## Jenkins
 
-### [YouTube DevOps Channel](https://www.youtube.com/channel/UC1nDIT9thqoFSSxvLyPHF5w/videos)
+### [Деплой приложения на hub.docker с помощью Jenkins](https://github.com/marley-nodejs/Learn-DevOps-CI-CD-with-Jenkins-using-Pipelines-and-Docker)
 
 <br/>
 
-## Почитать / Посмотреть
+## Возможно полезные материалы (Почитать / Посмотреть)
 
 ### Марко Лукша: Kubernetes в действии pdf rus 2019
 
@@ -54,8 +56,16 @@ permalink: /sitemap/
     https://youtu.be/fqgGVnuHye8
     https://youtu.be/s04UyNeakSY
 
+### [YouTube DevOps Channel](https://www.youtube.com/channel/UC1nDIT9thqoFSSxvLyPHF5w/videos)
+
 <br/>
 
 ### Weblogic в kubernetes
 
-https://oracle.github.io/weblogic-kubernetes-operator/quickstart/prerequisites/
+<a href="https://oracle.github.io/weblogic-kubernetes-operator/quickstart/prerequisites/" rel="nofollow">Ссылка</a>
+
+<br/>
+
+### Еще больше всякого добра на основном сайте по администрированию
+
+<a href="https://sysadm.ru/">Ссылка</a>
