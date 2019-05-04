@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Запустить локально itsimple.ru у себя
-permalink: /examples/itsimple/
+permalink: /devops/docker/itsimple/
 ---
 
 <br/>

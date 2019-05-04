@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Запустить приложение с котиками одной командой
-permalink: /examples/cats-app/
+permalink: /devpos/docker/cats-app/
 ---
 
 <br/>

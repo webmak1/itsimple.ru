@@ -19,3 +19,9 @@ permalink: /linux/servers/containers/kubernetes/
 <br/>
 
 ### [KubernetesInc Ingress Nginx](/linux/servers/containers/kubernetes/kubeadm/ingress/kubernetesinc-ingress-nginx/)
+
+<br/>
+
+# Minikube
+
+### [Deploy приложения с котиками в minikube](https://github.com/marley-nodejs/cats-app)

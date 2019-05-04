@@ -6,15 +6,23 @@ permalink: /sitemap/
 
 # Карта Сайта
 
-### [Запустить локально itsimple.ru у себя](/examples/itsimple/)
-
-### [Запустить приложение с котиками одной командой](/examples/cats-app/)
-
 <br/>
 
 ## Ansible
 
 ### [Разворачиваем Gitlab с помощью Ansible](/devops/ansible/gitlab/)
+
+<br/>
+
+## Docker
+
+### [Запустить локально itsimple.ru у себя](/devops/docker/itsimple/)
+
+### [Запустить приложение с котиками одной командой](/devpos/docker/cats-app/)
+
+### [Запустить Node.js + React + MongoDB одной командой](/devpos/docker/node-react-mongo/)
+
+### [BitcoinABC в docker контейнере](https://github.com/Bitcoin-ABC/bitcoinabc.org)
 
 <br/>
 
@@ -27,8 +35,6 @@ permalink: /sitemap/
 ## Возможно полезные материалы
 
 ### [YouTube DevOps Channel](https://www.youtube.com/channel/UC1nDIT9thqoFSSxvLyPHF5w/videos)
-
-### [BitcoinABC в docker контейнере](https://github.com/Bitcoin-ABC/bitcoinabc.org)
 
 <br/>
 
@@ -47,3 +53,9 @@ permalink: /sitemap/
     https://youtu.be/vtDvgAl3gVA
     https://youtu.be/fqgGVnuHye8
     https://youtu.be/s04UyNeakSY
+
+<br/>
+
+### Weblogic в kubernetes
+
+https://oracle.github.io/weblogic-kubernetes-operator/quickstart/prerequisites/
