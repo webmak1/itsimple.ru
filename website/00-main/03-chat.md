@@ -10,4 +10,4 @@ permalink: /chat/
 
 ### Telegram
 
-https://t.me/devops_community
+https://t.me/otus_devops

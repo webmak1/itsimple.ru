@@ -24,7 +24,7 @@ permalink: /sitemap/
 
 ### [BitcoinABC в docker контейнере](https://github.com/Bitcoin-ABC/bitcoinabc.org)
 
-### [Бесплатная версия Oracle в Docker](https://oracle-dba.ru/database/installation/single-instance/simple/linux/docker/oracle/11/xe/)
+### [Бесплатная версия Oracle в Docker](https://oracle-dba.ru/docker/xe/)
 
 <br/>
 

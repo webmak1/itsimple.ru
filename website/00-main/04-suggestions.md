@@ -10,6 +10,12 @@ permalink: /suggestions/
 
 <br/>
 
+### Docker for DevOps: From Development to Production
+
+Там где брал удалили. Но куча мест в интернете еще осталась
+
+<br/>
+
 ### [Stephen Grider] Docker and Kubernetes: The Complete Guide [2018, ENG]
 
 Достаточно интересный и практический курс по работе с контейнерами. Я научился чему-то новому.
@@ -30,8 +36,3 @@ permalink: /suggestions/
 
 <a href="https://bitbucket.org/marley-nodejs/docker-for-web-developers/">Здесь</a>
 
-<br/>
-
-### Docker for DevOps: From Development to Production
-
-Ссылка на материал в теме по девопс от отус на руктрекере
