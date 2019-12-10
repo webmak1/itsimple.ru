@@ -12,7 +12,7 @@ permalink: /
 
 Если кто захочет скинуться и купить --> https://t.me/coursehunters_skladchina
 
-Если кто захочет обсудить / поделиться --> https://t.me/otus_devops
+Если кто захочет обсудить / поделиться --> https://t.me/sysadm_ru
 
 <br/>
 
