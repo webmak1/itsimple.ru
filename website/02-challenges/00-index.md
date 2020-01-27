@@ -10,12 +10,13 @@ permalink: /challenges/
 
 ### [Challenges] Challenge 1
 
-Развернуть самое простое<a href="https://github.com/marley-nodejs/React-hooks-writing-real-project">js приложиение</a> в облаке digital ocean. Приложение не работает с базой данных, поэтому его можно считать простым. 
+Развернуть самое простое <a href="https://github.com/marley-nodejs/React-hooks-writing-real-project">js приложиение</a> в облаке digital ocean. Приложение не работает с базой данных, поэтому его можно считать простым. 
 
 Сначала приложение завернуть в docker контейнер и разместить в registry.
 Поднять с помощью Terraform окружение.
 
-Промо на $ 100 от Digital Ocean
+
+**Промо на $ 100 от Digital Ocean**  
 https://pages.news.digitalocean.com/n/VBIy200V3j0D300E6GyQvX0
 
 
@@ -43,3 +44,9 @@ https://app.livestorm.co/digitalocean/using-infrastructure-as-code-to-build-repr
 ### Кому нужны бесплатные домены
 
 Могут из взять на сайте freenom.com
+
+<br/>
+
+### Кому интересно и хочет поучаствовать
+
+Пишите в чате ссылки на ваши github с форкнутым проектом.
