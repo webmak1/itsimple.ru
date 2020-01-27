@@ -13,7 +13,8 @@ permalink: /challenges/
 Развернуть самое простое <a href="https://github.com/marley-nodejs/React-hooks-writing-real-project">js приложиение</a> в облаке digital ocean. Приложение не работает с базой данных, поэтому его можно считать простым. 
 
 Сначала приложение завернуть в docker контейнер и разместить в registry.
-Поднять с помощью Terraform окружение.
+
+Поднять с помощью Terraform окружение kubernetes.
 
 
 **Промо на $ 100 от Digital Ocean**  
@@ -49,4 +50,5 @@ https://app.livestorm.co/digitalocean/using-infrastructure-as-code-to-build-repr
 
 ### Кому интересно и хочет поучаствовать
 
+Делайте форк проекта к себе.  
 Пишите в чате ссылки на ваши github с форкнутым проектом.
