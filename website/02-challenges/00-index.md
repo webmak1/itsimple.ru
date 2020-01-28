@@ -106,8 +106,9 @@ https://app.livestorm.co/digitalocean/using-infrastructure-as-code-to-build-repr
 
 <br/>
 
-### Здесь должны быть ссылки на github проекты участников
+### Посмотреть проекты участников
 
-<a href="https://github.com/marley-nodejs/React-hooks-writing-real-project">Marley</a>.
+<a href="https://github.com/marley-nodejs/React-hooks-writing-real-project/network/members">Здесь</a>.
+
 
 Все самое лучшее из наработок (если такие конечно будут), потом включу в этот проект.
