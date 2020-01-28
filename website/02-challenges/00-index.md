@@ -17,7 +17,14 @@ permalink: /challenges/
 <br/>
 
 **Шаг: 1 (Задание для devops, который хочет зарабатывать 30 000 руб.)**  
-Приложение завернуть в docker контейнер и разместить в registry. Использовать какой-нибудь инструмент CI/CD. Jenkins, GitLab-CI, Github-Action.
+Приложение завернуть в docker контейнер и разместить в registry. Использовать какой-нибудь инструмент CI/CD. Jenkins, GitLab-CI, Github-Actions.
+
+UPD.  
+Если кто сам не хочет разбираться, вот здесь работающий пример.
+
+https://github.com/marley-nodejs/The-React-Practice-Course-Learn-by-Building-Projects/tree/master/project1
+
+Можно сделать по аналогии.
 
 <br/>
 
