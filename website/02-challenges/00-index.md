@@ -17,7 +17,7 @@ permalink: /challenges/
 <br/>
 
 **Шаг: 1**  
-Приложение завернуть в docker контейнер и разместить в registry. 
+Приложение завернуть в docker контейнер и разместить в registry. Использовать какой-нибудь инструмент CI/CD. Jenkins, GitLab-CI, Github-Action.
 
 <br/>
 
