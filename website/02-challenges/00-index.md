@@ -98,7 +98,7 @@ https://app.livestorm.co/digitalocean/using-infrastructure-as-code-to-build-repr
 ### Кому интересно и хочет поучаствовать
 
 Делайте форк проекта к себе.  
-Пишите в чате ссылки на ваши github с форкнутым проектом.
+Работаете со своей версией проекта. Использовать свой registry (например, hub.docker.com)
 
 В проект добавить Dockerfile, а также скрипты terraform (У меня пока поверхностные знания о terraform) и другие скрипты, если требуются. 
 
