@@ -67,21 +67,25 @@ https://t.me/otus_devops
 **Промо на $ 100 от Digital Ocean**  
 https://pages.news.digitalocean.com/n/VBIy200V3j0D300E6GyQvX0
 
+<br/>
+
+**И вот здесь тоже давали $100**  
+do.co/mason
+
+
 
 <br/>
 
-Регистрация на предстоящий вебинар по Terraform от DigitalOcean
+### [Webinar] Using Infrastructure as Code to Build Reproducible Systems with Terraform on DigitalOcean
 
-https://app.livestorm.co/digitalocean/using-infrastructure-as-code-to-build-reproducible-systems-with-terraform-on-digitalocean/?utm_source=webinar&utm_medium=email&utm_campaign=2020_01_30_terraform
+(Если появится на youtube, добавлю)
 
+https://github.com/Zelgius/Infrastructure-As-Code-Intro
 
-<br/>
-
-Ранее был вебинар по Kubernetes:
 
 <br/>
 
-### A DigitalOcean Workshop: Get Started with Containers and Kubernetes
+### [Webinar] A DigitalOcean Workshop: Get Started with Containers and Kubernetes
 
 <div align="center">
     <iframe width="853" height="480" src="https://www.youtube.com/embed/7WOgYfZgSf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
