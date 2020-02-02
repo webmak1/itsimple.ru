@@ -1,6 +1,7 @@
 ---
 layout: page
 title: DEVOPS - Challenges
+description: DEVOPS - Challenges - Разворачиваем разные приложения разными средствами на разных окружениях
 permalink: /challenges/
 ---
 
