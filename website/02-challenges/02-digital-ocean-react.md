@@ -1,6 +1,7 @@
 ---
 layout: page
 title: DEVOPS Challenges - Развернуть React (JavaScript) приложение в облаке Digital Ocean
+description: Задача - Развернуть самое простое React (JavaScript) приложиение в облаке Digital Ocean
 permalink: /challenges/digital-ocean-react/
 ---
 
