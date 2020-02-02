@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Запустить Node.js + React + MongoDB одной командой
+description: Запустить Node.js + React + MongoDB одной командой
 permalink: /devpos/docker/node-react-mongo/
 ---
 
@@ -16,10 +17,12 @@ https://github.com/marley-nodejs/learning-full-stack-javascript-development-mong
 
 **Команда для запуска:**
 
-    $ docker run -it \
-    -p 80:8080 \
-    --name learning-full-stack-javascript-development-mongodb-node-and-react \
-    marley/learning-full-stack-javascript-development-mongodb-node-and-react
+```
+$ docker run -it \
+-p 80:8080 \
+--name learning-full-stack-javascript-development-mongodb-node-and-react \
+marley/learning-full-stack-javascript-development-mongodb-node-and-react
+```
 
 <br/>
 
