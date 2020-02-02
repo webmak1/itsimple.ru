@@ -2,6 +2,9 @@
 title: DEVOPS
 
 description: Здесь админы и программисты вместе изучают и обсуждают темы, связанные с автоматизацией развертывания приложений, прежде всего средствами Ansible, Docker, Kubernetes
+
+keywords: Devops, Linux, Kubernetes, Docker, Ansible, Jenkins, GitLab, AWS, GCP, Azure
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://itsimple.ru" # the base hostname & protocol for your site
 

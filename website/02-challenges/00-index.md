@@ -2,6 +2,7 @@
 layout: page
 title: DEVOPS - Challenges
 description: DEVOPS - Challenges - Разворачиваем разные приложения разными средствами на разных окружениях
+keywords: DEVOPS, challenges, clouds, kubernetes, digital ocean
 permalink: /challenges/
 ---
 

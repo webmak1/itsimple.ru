@@ -7,8 +7,7 @@
   
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-
-  <meta name="keywords" content="Devops, Ansible, Docker, Kubernetes, Linux, Jenkins, GitLab">
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.keywords }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/github.css" | prepend: site.baseurl }}">
