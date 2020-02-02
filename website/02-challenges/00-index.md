@@ -82,6 +82,16 @@ do.co/mason
 
 https://github.com/Zelgius/Infrastructure-As-Code-Intro
 
+<br/>
+
+Вот это, наверное лучше.
+
+<div align="center">
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLtK75qxsQaMIHQOaDd0Zl_jOuu1m3vcWO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+https://github.com/groovemonkey/digitalocean-terraform
+
 
 <br/>
 
