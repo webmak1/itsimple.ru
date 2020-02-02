@@ -10,7 +10,11 @@
 
     <!-- Google Analitics -->
 
-    <p><strong>Tags:</strong>"{% if page.keywords %}{{ page.keywords | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.keywords }}{% endif %}"</p>
+    <div align="center">
+      {% if page.keywords %}
+        <p><strong>Tags:</strong>{{ page.keywords | strip_html | strip_newlines | truncate: 160 }}
+      {% endif %}</p>
+    </div>
 
     <h2 class="footer-heading"> {{ site.title }} </h2>
 
