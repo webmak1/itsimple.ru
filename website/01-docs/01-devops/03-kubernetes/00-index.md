@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Kubernetes
+description: Материалы по изучению kubernetes
+keywords: devops, kubernetes
 permalink: /linux/servers/containers/kubernetes/
 ---
 

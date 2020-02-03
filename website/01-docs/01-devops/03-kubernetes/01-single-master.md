@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Single Master Kubernetes Cluster в виртуальных машинах (vagrant, kubeadm, kubectl)
+description: Устанавливаем kubernetes кластер в виртуальной машине
+keywords: devops, kubernetes
 permalink: /linux/servers/containers/kubernetes/single-master/
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: DEVOPS Challenges - Развернуть Python - PostgreSQL приложение в облаке Digital Ocean (По шагам из видео)
 description: Задача - Развернуть Python - PostgreSQL приложиение в облаке Digital Ocean 
-keywords: DEVOPS, challenge, python, postgresq, digital ocean
+keywords: devops, challenge, python, postgresql, digital ocean
 permalink: /challenges/digital-ocean-python-postgresql/
 ---
 
