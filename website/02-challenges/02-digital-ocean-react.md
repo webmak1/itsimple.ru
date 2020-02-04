@@ -76,13 +76,15 @@ do.co/mason
 
 ### [Webinar] Using Infrastructure as Code to Build Reproducible Systems with Terraform on DigitalOcean
 
-(Если появится на youtube, добавлю)
+<div align="center">
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/U5suIJwobiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 https://github.com/Zelgius/Infrastructure-As-Code-Intro
 
 <br/>
 
-Вот это, наверное лучше.
+Наверное лучше для начала посмотреть вот этот материал:
 
 <div align="center">
     <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLtK75qxsQaMIHQOaDd0Zl_jOuu1m3vcWO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
