@@ -19,7 +19,7 @@ https://www.udemy.com/course/python-django-dev-to-deployment/
 <a href="https://bitbucket.org/marley-python/python-django-dev-to-deployment/src/master/">здесь</a>
 
 
-**Пошаговоре видео**  
+**Пошаговое видео**  
 <a href="https://cloud.mail.ru/public/4XQr/HdQ3rUNBg">здесь</a>
 
 **Делать по инструкции:**  
