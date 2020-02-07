@@ -12,10 +12,21 @@ permalink: /challenges/python/
 
 Группа в telegram: https://t.me/otus_python
 
+<br/>
+
+### Challenges перенумерованы от простого к более сложному
 
 <br/>
 
-### [Challenge 1] Python Django Dev To Deployment
+### [Challenge 1] Build A Dental Website With Python and Django
+
+https://www.udemy.com/course/build-a-dental-website-with-python-and-django/
+
+Простой на 3 часа видео курс. Без баз данных. По завершении остается проект для портфолио.
+
+<br/>
+
+### [Challenge 2] Python Django Dev To Deployment
 
 Дополнительный challenge для тех у кого есть пол часа в день на практику.
 
@@ -49,7 +60,7 @@ https://www.udemy.com/course/python-django-dev-to-deployment/
 
 <br/>
 
-### [Challenge 2] Python и DS Challenge
+### [Challenge 3] Python и DS Challenge
 
 За основу взят курс Python Fundamantals от Deitel.
 
