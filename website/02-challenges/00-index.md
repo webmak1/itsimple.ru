@@ -20,7 +20,5 @@ permalink: /challenges/
 
 Также имеется приложение на  <a href="https://bitbucket.org/marley-golang/learn-to-create-web-applications-using-go/src/master/">GO (Golang)</a>.
 
-<br/>
-
 Также имеется приложение на  <a href="https://bitbucket.org/marley-spring/building-an-e-commerce-store-using-java-spring-framework/src/master/">Java (Spring)</a>.
 

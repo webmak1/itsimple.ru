@@ -25,6 +25,10 @@ https://www.udemy.com/course/python-django-dev-to-deployment/
 **Делать по инструкции:**  
 https://gist.github.com/bradtraversy/cfa565b879ff1458dba08f423cb01d71
 
+<br/>
+
+**Желательно добавить работу проекта по https с редиектом http на https**
+
 
 <br/>
 
@@ -53,3 +57,15 @@ do.co/mason
 
 Могут из взять на сайте freenom.com
 
+<br/>
+
+### Кому нужны бесплатные SSL сертификаты
+
+https://letsencrypt.org/
+
+
+<br/>
+
+### Кто пройдет challenge, отпишитесь. 
+
+Проверим и запишем в список прошедших.
