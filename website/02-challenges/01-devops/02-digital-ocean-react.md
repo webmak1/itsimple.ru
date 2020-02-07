@@ -3,7 +3,7 @@ layout: page
 title: DEVOPS Challenges - Развернуть React (JavaScript) приложение в облаке Digital Ocean
 description: Задача - Развернуть самое простое React (JavaScript) приложиение в облаке Digital Ocean
 keywords: devops, challenge, react, docker, kubernetes, digital ocean
-permalink: /challenges/digital-ocean-react/
+permalink: /challenges/devops/digital-ocean-react/
 ---
 
 # [DEVOPS Challenges] Challenge 1 - Развернуть React (JavaScript) приложение в облаке Digital Ocean
