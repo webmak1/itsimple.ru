@@ -18,6 +18,8 @@ permalink: /challenges/devops/
 <br/>
 <br/>
 
+Также имеется простое приложение без базы на <a href="https://bitbucket.org/marley-golang/resources-echo-web-v2/src/master/">GO (Golang)</a>. Из примеров по работе с Google Clouds с подготовленным Dockerfile.
+
 Также имеется приложение на  <a href="https://bitbucket.org/marley-golang/learn-to-create-web-applications-using-go/src/master/">GO (Golang)</a>.
 
 Также имеется приложение на  <a href="https://bitbucket.org/marley-spring/building-an-e-commerce-store-using-java-spring-framework/src/master/">Java (Spring)</a>.

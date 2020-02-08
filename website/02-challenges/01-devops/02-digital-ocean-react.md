@@ -105,7 +105,7 @@ https://github.com/groovemonkey/digitalocean-terraform
 
 ### Кому нужны бесплатные домены
 
-Могут из взять на сайте freenom.com
+Могут их взять на сайте freenom.com
 
 <br/>
 
