@@ -6,7 +6,7 @@ keywords: devops, challenge, python, postgresql, digital ocean
 permalink: /challenges/devops/digital-ocean-python-postgresql/
 ---
 
-# [DEVOPS Challenges] Challenge 0 - Развернуть Python / PostgreSQL приложение в облаке Digital Ocean (По шагам из видео)
+# [DEVOPS Challenges] Challenge 0.1 - Развернуть Python / PostgreSQL приложение в облаке Digital Ocean (По шагам из видео)
 
 **Задача:**  
 Развернуть Python / PostgreSQL приложиение в облаке Digital Ocean. 

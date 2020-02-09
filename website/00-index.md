@@ -8,9 +8,9 @@ permalink: /
 
 <br/>
 
-### [DEVOPS Challenges] 
+### [Challenges] 
 
-<a href="/challenges/">DEVOPS Challenges</a>.
+<a href="/challenges/">Challenges</a>.
 
 
 <br/>
