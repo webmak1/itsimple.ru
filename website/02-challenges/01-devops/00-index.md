@@ -12,6 +12,8 @@ permalink: /challenges/devops/
 
 ### [Challenge 0 - Развернуть Python / PostgreSQL приложение в облаке Digital Ocean (По шагам из видео)](/challenges/devops/digital-ocean-python-postgresql/)
 
+### [Challenge 0.1 - Развернуть GO приложение в kubernetes с использованием облаков Digital Ocean (По шагам из видео)](https://www.youtube.com/watch?v=g_-U5jddSuM)
+
 ### [Challenge 1 - Развернуть React (JavaScript) приложение в облаке Digital Ocean](/challenges/devops/digital-ocean-react/)
 
 
