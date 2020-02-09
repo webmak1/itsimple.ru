@@ -24,3 +24,9 @@ permalink: /challenges/devops/
 
 Также имеется приложение на  <a href="https://bitbucket.org/marley-spring/building-an-e-commerce-store-using-java-spring-framework/src/master/">Java (Spring)</a>.
 
+<br/>
+<br/>
+
+
+### [Challenge X - от zadeploy](https://github.com/zadeploy/domashku#homework-the-last-one)
+
