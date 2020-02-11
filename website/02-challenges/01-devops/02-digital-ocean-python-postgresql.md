@@ -32,40 +32,6 @@ https://gist.github.com/bradtraversy/cfa565b879ff1458dba08f423cb01d71
 
 <br/>
 
-### Обсуждение в телеграм группе
-
-(Если кто придет из интернетов)
-
-https://t.me/otus_devops
-
-<br/>
-
-### Полезные материалы
-
-**Промо на $ 100 от Digital Ocean**  
-https://pages.news.digitalocean.com/n/VBIy200V3j0D300E6GyQvX0
-
-<br/>
-
-**И вот здесь тоже давали $100**  
-do.co/mason
-
-
-<br/>
-
-### Кому нужны бесплатные домены
-
-Могут их взять на сайте freenom.com
-
-<br/>
-
-### Кому нужны бесплатные SSL сертификаты
-
-https://letsencrypt.org/
-
-
-<br/>
-
 ### Кто пройдет challenge, отпишитесь. 
 
 Проверим и запишем в список прошедших.

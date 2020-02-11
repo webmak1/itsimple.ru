@@ -11,44 +11,13 @@ permalink: /challenges/devops/digital-ocean-kubernetes-go-application/
 **Задача:**  
 Развернуть Go приложиение в kubernetes с использованием облаков Digital Ocean
 
+Желательно использовать свой docker registry (hub.docker.com, quay.io)
+
 <br/>
 
 <div align="center">
     <iframe width="853" height="480" src="https://www.youtube.com/embed/g_-U5jddSuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-<br/>
-
-### Обсуждение в телеграм группе
-
-(Если кто придет из интернетов)
-
-https://t.me/otus_devops
-
-<br/>
-
-### Полезные материалы
-
-**Промо на $ 100 от Digital Ocean**  
-https://pages.news.digitalocean.com/n/VBIy200V3j0D300E6GyQvX0
-
-<br/>
-
-**И вот здесь тоже давали $100**  
-do.co/mason
-
-
-<br/>
-
-### Кому нужны бесплатные домены
-
-Могут их взять на сайте freenom.com
-
-<br/>
-
-### Кому нужны бесплатные SSL сертификаты
-
-https://letsencrypt.org/
 
 
 

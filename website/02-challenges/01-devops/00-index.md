@@ -29,11 +29,50 @@ permalink: /challenges/devops/
 <br/>
 <br/>
 
-Также имеется простое приложение без базы на <a href="https://bitbucket.org/marley-golang/resources-echo-web-v2/src/master/">GO (Golang)</a>. Из примеров по работе с Google Clouds с подготовленным Dockerfile.
+<br/>
 
-Также имеется приложение на  <a href="https://bitbucket.org/marley-golang/learn-to-create-web-applications-using-go/src/master/">GO (Golang)</a>.
+### Обсуждение в телеграм группе
 
-Также имеется приложение на  <a href="https://bitbucket.org/marley-spring/building-an-e-commerce-store-using-java-spring-framework/src/master/">Java (Spring)</a>.
+(Если кто придет из интернетов)
+
+https://t.me/otus_devops
+
+<br/>
+
+### Промо от Digital Ocean
+
+**Здесь**  
+https://pages.news.digitalocean.com/n/VBIy200V3j0D300E6GyQvX0
+
+<br/>
+
+**И вот здесь тоже давали $100**  
+do.co/mason
+
+
+<br/>
+
+### Кому нужны бесплатные домены
+
+Могут их взять на сайте freenom.com
+
+<br/>
+
+### Кому нужны бесплатные SSL сертификаты
+
+https://letsencrypt.org/
+
+
+<br/>
+<br/>
+
+### Приложения которые пока не использовали
+
+<a href="https://bitbucket.org/marley-golang/resources-echo-web-v2/src/master/">GO (Golang)</a>. Из примеров по работе с Google Clouds с подготовленным Dockerfile.
+
+<a href="https://bitbucket.org/marley-golang/learn-to-create-web-applications-using-go/src/master/">GO (Golang)</a>.
+
+<a href="https://bitbucket.org/marley-spring/building-an-e-commerce-store-using-java-spring-framework/src/master/">Java (Spring)</a>.
 
 <br/>
 <br/>
