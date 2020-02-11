@@ -16,6 +16,8 @@ permalink: /challenges/devops/
 
 ### [Challenge 1 - Развернуть React (JavaScript) приложение в облаке Digital Ocean](/challenges/devops/digital-ocean-react/)
 
+### Challenge 2 - Развернуть Python / PostgreSQL приложение в облаке Digital Ocean (Использовать для Python приложения kubernetes. База должна храниться в специально предназначенных для баз droplet'е)
+
 
 <br/>
 <br/>
