@@ -58,7 +58,7 @@ https://letsencrypt.org/
 
 <br/>
 
-    $ mv k8s-1-16-6-do-0-fra1-1581274701235-kubeconfig.yaml /home/marley/.kube/config
+    $ mv k8s-1-16-6-do-0-fra1-1581274701235-kubeconfig.yaml ~/.kube/config
 
 <br/>
 

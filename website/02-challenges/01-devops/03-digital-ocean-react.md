@@ -27,7 +27,18 @@ https://github.com/marley-nodejs/The-React-Practice-Course-Learn-by-Building-Pro
 <br/>
 
 **Шаг: 2 (Задание для devops, который хочет зарабатывать 40 000 руб.)**  
-Поднять с помощью Terraform окружение стандартное для запуска приложения в docker контейнере. Либо поднять kubernetes (предпочтительнее).
+
+Поднять kubernetes кластер.
+
+Желательно с помощью Terraform. 
+
+Для этого поможет статья (если не будет открываться, используйте proxy сервисы):  
+https://ponderosa.io/blog/kubernetes/2019/03/13/terraform-cluster-create/
+
+Необходимо в скриптах указать актуальную версия kubernetes. Сейчас это:
+
+version = "1.16.6-do.0"
+
 
 <br/>
 
