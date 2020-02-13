@@ -24,7 +24,9 @@ permalink: /challenges/devops/
 
 ### [Challenge 1.1 - Развернуть React (JavaScript) приложение в облаке Digital Ocean](/challenges/devops/digital-ocean-react/)
 
-### Challenge 1.2 - Развернуть Python / PostgreSQL приложение в облаке Digital Ocean (Использовать для Python приложения kubernetes. База должна храниться в специально предназначенных для баз сервисе провайдера)
+### Challenge 1.2 - Развернуть Python / PostgreSQL приложение из challenge 0.1 в облаке Digital Ocean (Использовать для Python приложения kubernetes. База должна храниться в специально предназначенных для баз сервисе провайдера)
+
+### [Challenge 1.3 - Развернуть React (JavaScript) + Rest API + MongoDB приложение в облаке Digital Ocean](https://github.com/marley-nodejs/MERN-Stack-Front-To-Back-v2.0)
 
 
 <br/>
@@ -42,10 +44,11 @@ https://t.me/otus_devops
 
 ### Промо от Digital Ocean
 
+**Моя рефка (должна давать $100 при регистрации)**  
+https://m.do.co/c/5103a2671a81
+
 **Здесь**  
 https://pages.news.digitalocean.com/n/VBIy200V3j0D300E6GyQvX0
-
-<br/>
 
 **И вот здесь тоже давали $100**  
 do.co/mason
