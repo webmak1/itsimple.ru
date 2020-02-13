@@ -12,11 +12,11 @@ permalink: /challenges/devops/
 
 ## Разминочные
 
-### [Challenge 0 - Развернуть GO приложение в kubernetes с использованием облаков Digital Ocean (По шагам из видео)](/challenges/devops/digital-ocean-kubernetes-go-application/)
+### [Challenge 0.1 - Развернуть GO приложение в kubernetes с использованием облаков Digital Ocean (По шагам из видео)](/challenges/devops/digital-ocean-kubernetes-go-application/)
 
-### [Challenge 0.1 - Развернуть Python / PostgreSQL приложение в облаке Digital Ocean (По шагам из видео)](/challenges/devops/digital-ocean-python-postgresql/)
+### [Challenge 0.2 - Развернуть Python / PostgreSQL приложение в облаке Digital Ocean (По шагам из видео)](/challenges/devops/digital-ocean-python-postgresql/)
 
-### [Challenge 0.2 - Развернуть JavaScript (Node.js) приложение в kubernetes с использованием облаков Digital Ocean](/challenges/devops/digital-ocean-nodejs/)
+### [Challenge 0.3 - Развернуть JavaScript (Node.js) приложение в kubernetes с использованием облаков Digital Ocean](/challenges/devops/digital-ocean-nodejs/)
 
 <br/>
 
@@ -24,7 +24,7 @@ permalink: /challenges/devops/
 
 ### [Challenge 1.1 - Развернуть React (JavaScript) приложение в облаке Digital Ocean](/challenges/devops/digital-ocean-react/)
 
-### Challenge 1.2 - Развернуть Python / PostgreSQL приложение из challenge 0.1 в облаке Digital Ocean (Использовать для Python приложения kubernetes. База должна храниться в специально предназначенных для баз сервисе провайдера)
+### [Challenge 1.2 - Развернуть Python / PostgreSQL приложение из challenge 0.2 в облаке Digital Ocean (Использовать для Python приложения kubernetes)](/challenges/devops/digital-ocean-kubernetes-python-postgresql/)
 
 ### [Challenge 1.3 - Развернуть React (JavaScript) + Rest API + MongoDB приложение в облаке Digital Ocean](https://github.com/marley-nodejs/MERN-Stack-Front-To-Back-v2.0)
 

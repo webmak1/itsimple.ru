@@ -6,7 +6,7 @@ keywords: devops, challenge, node.js, kubernetes
 permalink: /challenges/devops/digital-ocean-nodejs/
 ---
 
-# [DEVOPS Challenges] Challenge 0.2 - Развернуть JavaScript (Node.js) приложение в kubernetes с использованием облаков Digital Ocean
+# [DEVOPS Challenges] Challenge 0.3 - Развернуть JavaScript (Node.js) приложение в kubernetes с использованием облаков Digital Ocean
 
 **Задача:**  
 Развернуть JavaScript (Node.js) приложение в kubernetes с использованием облаков Digital Ocean

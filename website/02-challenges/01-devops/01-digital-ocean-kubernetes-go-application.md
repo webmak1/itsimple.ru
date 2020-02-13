@@ -6,7 +6,7 @@ keywords: devops, challenge, kubernetes, go, digital ocean
 permalink: /challenges/devops/digital-ocean-kubernetes-go-application/
 ---
 
-# [DEVOPS Challenges] Challenge 0 - Развернуть GO приложение в kubernetes с использованием облаков Digital Ocean (По шагам из видео)
+# [DEVOPS Challenges] Challenge 0.1 - Развернуть GO приложение в kubernetes с использованием облаков Digital Ocean (По шагам из видео)
 
 **Задача:**  
 Развернуть Go приложиение в kubernetes с использованием облаков Digital Ocean
