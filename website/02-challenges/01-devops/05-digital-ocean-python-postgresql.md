@@ -16,3 +16,5 @@ permalink: /challenges/devops/digital-ocean-kubernetes-python-postgresql/
 Для Python приложения использовать kubernetes. 
 
 База должна храниться в специально предназначенных для баз сервисе провайдера.
+
+Пароли не должны храниться в открытом виде.

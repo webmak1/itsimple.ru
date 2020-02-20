@@ -122,6 +122,14 @@ https://t.me/coursehunters_skladchina/701
 https://t.me/coursehunters_skladchina/703
 
 
+
+<br/>
+
+### [Инфо] Пишут, что для совсем новичков, есть книга
+
+https://t.me/otus_python/2423
+
+
 <br/>
 
 ### [Инфо] Кто вообще с 0 и не может на английском
