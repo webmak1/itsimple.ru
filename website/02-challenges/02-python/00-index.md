@@ -57,10 +57,19 @@ https://www.udemy.com/course/python-django-dev-to-deployment/
   <li><a href="https://github.com/snake-15/udemy_django">Max King</a></li>
 </ul>
 
+<br/>
+
+### [Challenge 3] Django 3 - Full Stack Websites with Python Web Development
+
+https://www.udemy.com/course/django-3-make-websites-with-python-tutorial-beginner-learn-bootstrap/
+
+Пока скачиваем с файлопомойки.
+
+Осталось скачать 8,9 файлы.
 
 <br/>
 
-### [Challenge 3] Python и DS Challenge
+### [Challenge 4] Python и DS Challenge
 
 За основу взят курс Python Fundamantals от Deitel.
 
