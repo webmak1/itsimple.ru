@@ -53,6 +53,9 @@ https://pages.news.digitalocean.com/n/VBIy200V3j0D300E6GyQvX0
 **И вот здесь тоже давали $100**  
 do.co/mason
 
+**И здесь**  
+https://try.digitalocean.com/open-source/?utm_source=webinar&utm_medium=email&utm_campaign=Feb_2020_Droplet_Webinar_New
+
 
 <br/>
 
@@ -62,7 +65,12 @@ do.co/mason
 
 Но лучше зарегать свою .ru - за 170 руб. на www.regnic.name
 
+
 Или .com по промо от godaddy https://www.godaddy.com/promos/coupon-promo-codes (Это для тех, кто раньше не пользовался. И за этим регистратором нужен глаз да глаз, чтобы не накидал ненужного в корзину и через год не списал кучу бабла.)
+
+
+Моя <a href="http://www.dynadot.com?s9X8d6o9V7zW8z7k">рефка</a> на dynadot. (When someone clicks on your link, creates a Dynadot account, and spends $9.99 within 48 hours, both you and the new account are eligible to receive $5 DynaDollars*.) 
+
 
 <br/>
 
