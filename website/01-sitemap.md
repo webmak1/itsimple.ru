@@ -36,7 +36,7 @@ permalink: /sitemap/
 
 ## Jenkins
 
-### [Деплой приложения на hub.docker с помощью Jenkins](https://github.com/marley-nodejs/Learn-DevOps-CI-CD-with-Jenkins-using-Pipelines-and-Docker)
+### [Деплой приложения на hub.docker с помощью Jenkins](https://github.com/webmakaka/Learn-DevOps-CI-CD-with-Jenkins-using-Pipelines-and-Docker)
 
 <br/>
 

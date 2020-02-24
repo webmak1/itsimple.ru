@@ -11,7 +11,7 @@ permalink: /devpos/docker/node-react-mongo/
 
 **Само приложение:**
 
-https://github.com/marley-nodejs/learning-full-stack-javascript-development-mongodb-node-and-react
+https://github.com/webmakaka/learning-full-stack-javascript-development-mongodb-node-and-react
 
 <br/>
 

@@ -11,7 +11,7 @@ permalink: /devpos/docker/cats-app/
 
 **Само приложение:**
 
-https://github.com/marley-nodejs/cats-app
+https://github.com/webmakaka/cats-app
 
 <br/>
 

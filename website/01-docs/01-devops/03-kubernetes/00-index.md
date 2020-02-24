@@ -26,4 +26,4 @@ permalink: /linux/servers/containers/kubernetes/
 
 # Minikube
 
-### [Deploy приложения с котиками в minikube](https://github.com/marley-nodejs/cats-app)
+### [Deploy приложения с котиками в minikube](https://github.com/webmakaka/cats-app)

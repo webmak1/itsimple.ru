@@ -22,13 +22,13 @@ permalink: /suggestions/
 
 Особенно интересно тем, кто работает с современным javascript.
 
-<a href="https://github.com/marley-nodejs/Docker-and-Kubernetes-The-Complete-Guide">Посмотреть пример</a>
+<a href="https://github.com/webmakaka/Docker-and-Kubernetes-The-Complete-Guide">Посмотреть пример</a>
 
 <br/>
 
 ### Projects in Docker [Video]
 
-<a href="https://github.com/marley-nodejs/Projects-in-Docker">Здесь</a>
+<a href="https://github.com/webmakaka/Projects-in-Docker">Здесь</a>
 
 <br/>
 

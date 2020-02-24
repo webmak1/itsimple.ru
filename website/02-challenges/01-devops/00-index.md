@@ -26,7 +26,7 @@ permalink: /challenges/devops/
 
 ### [Challenge 1.2 - Развернуть Python / PostgreSQL приложение из challenge 0.2 в облаке Digital Ocean (Использовать для Python приложения kubernetes)](/challenges/devops/digital-ocean-kubernetes-python-postgresql/)
 
-### [Challenge 1.3 - Развернуть React (JavaScript) + Rest API + MongoDB приложение в облаке Digital Ocean](https://github.com/marley-nodejs/MERN-Stack-Front-To-Back-v2.0)
+### [Challenge 1.3 - Развернуть React (JavaScript) + Rest API + MongoDB приложение в облаке Digital Ocean](https://github.com/webmakaka/MERN-Stack-Front-To-Back-v2.0)
 
 
 <br/>

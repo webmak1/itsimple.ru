@@ -10,7 +10,7 @@ permalink: /challenges/devops/digital-ocean-react/
 
 **Задача:**  
 
-Развернуть самое простое <a href="https://github.com/marley-nodejs/React-hooks-writing-real-project">React (JavaScript) приложиение</a> в облаке Digital Ocean. Приложение не работает с базой данных, поэтому его можно считать простым. 
+Развернуть самое простое <a href="https://github.com/webmakaka/React-hooks-writing-real-project">React (JavaScript) приложиение</a> в облаке Digital Ocean. Приложение не работает с базой данных, поэтому его можно считать простым. 
 
 <br/>
 
@@ -20,7 +20,7 @@ permalink: /challenges/devops/digital-ocean-react/
 UPD.  
 Если кто сам не хочет разбираться, вот здесь работающий пример.
 
-https://github.com/marley-nodejs/The-React-Practice-Course-Learn-by-Building-Projects/tree/master/project1
+https://github.com/webmakaka/The-React-Practice-Course-Learn-by-Building-Projects/tree/master/project1
 
 Можно сделать по аналогии.
 
@@ -109,7 +109,7 @@ https://github.com/groovemonkey/digitalocean-terraform
 
 ### Посмотреть проекты участников
 
-<a href="https://github.com/marley-nodejs/React-hooks-writing-real-project/network/members">Здесь</a>.
+<a href="https://github.com/webmakaka/React-hooks-writing-real-project/network/members">Здесь</a>.
 
 
 Все самое лучшее из наработок (если такие конечно будут), потом включу в этот проект.

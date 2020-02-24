@@ -12,7 +12,7 @@ permalink: /challenges/devops/digital-ocean-nodejs/
 Развернуть JavaScript (Node.js) приложение в kubernetes с использованием облаков Digital Ocean
 
 **Исходные коды проекта**  
-<a href="https://github.com/marley-nodejs/cats-app">здесь</a>
+<a href="https://github.com/webmakaka/cats-app">здесь</a>
 
 <br/>
 
