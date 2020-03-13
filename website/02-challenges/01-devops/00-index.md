@@ -38,7 +38,7 @@ permalink: /challenges/devops/
 
 (Если кто придет из интернетов)
 
-https://t.me/otus_devops
+https://t.me/devops_community
 
 <br/>
 

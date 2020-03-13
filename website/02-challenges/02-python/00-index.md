@@ -10,7 +10,7 @@ permalink: /challenges/python/
 
 Собираем и изучаем материалы по Python вместе.
 
-Группа в telegram: https://t.me/otus_python
+Группа в telegram: https://t.me/devops_community
 
 <br/>
 
@@ -136,7 +136,7 @@ https://t.me/coursehunters_skladchina/703
 
 ### [Инфо] Пишут, что для совсем новичков, есть книга
 
-https://t.me/otus_python/2423
+https://t.me/devops_community/2423
 
 
 <br/>
