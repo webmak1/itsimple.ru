@@ -30,6 +30,12 @@ permalink: /challenges/devops/
 
 
 <br/>
+
+## Продолжаем погружение
+
+### [Challenge 2.1 - Continuous Delivery with Jenkins in Kubernetes Engine](/challenges/devops/continuous-delivery-jentins-to-kubernetes/)
+
+<br/>
 <br/>
 
 <br/>
