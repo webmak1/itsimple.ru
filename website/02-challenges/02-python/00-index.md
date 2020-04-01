@@ -120,17 +120,6 @@ https://www.udemy.com/course/django-3-make-websites-with-python-tutorial-beginne
   <iframe width="853" height="480" src="https://www.youtube.com/embed/5Yl6_2d0CN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<br/>
-
-### [Инфо] Мнение чувака из чата по хорошим материалам для изучения python
-
-https://t.me/coursehunters_skladchina/701
-
-Пишут, что хорошая книга:
-
-https://t.me/coursehunters_skladchina/703
-
-
 
 <br/>
 
