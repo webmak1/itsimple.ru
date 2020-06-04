@@ -12,6 +12,8 @@ permalink: /challenges/python/
 
 Группа в telegram: https://t.me/devops_community
 
+По вопросам по изучению DataScience (Machine Learning, BigData) группа в telegram: https://t.me/matematika_org
+
 <br/>
 
 ### Challenges перенумерованы от простого к более сложному
@@ -53,7 +55,7 @@ https://www.udemy.com/course/python-django-dev-to-deployment/
 **Исходные коды участников:**
 
 <ul>
-  <li><a href="https://bitbucket.org/marley-python/python-django-dev-to-deployment/src/master/">Marley</a></li>
+  <li><a href="https://github.com/webmakaka/Python-django-dev-to-deployment">Marley</a></li>
   <li><a href="https://github.com/snake-15/udemy_django">Max King</a></li>
 </ul>
 
@@ -63,13 +65,10 @@ https://www.udemy.com/course/python-django-dev-to-deployment/
 
 https://www.udemy.com/course/django-3-make-websites-with-python-tutorial-beginner-learn-bootstrap/
 
-Пока скачиваем с файлопомойки.
-
-Осталось скачать 8,9 файлы.
 
 <br/>
 
-### [Challenge 4] Python и DS Challenge
+### [Challenge 4] Python и DataScience Challenge
 
 За основу взят курс Python Fundamantals от Deitel.
 
