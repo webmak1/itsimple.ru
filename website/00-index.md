@@ -6,7 +6,6 @@ permalink: /
 
 # DEVOPS
 
-
 ### [A Cloud Guru, Linux Academy] Внедрение полного конвейера CI/CD [RUS, 2020]
 
 <br/>
@@ -30,7 +29,7 @@ permalink: /
 **Содержание:**
 
 ```
-* Введение в реализацию полного конвейера CI/CD 
+* Введение в реализацию полного конвейера CI/CD
 
 * Управление версиями исходного кода
 - Введение в SCM
@@ -101,23 +100,33 @@ permalink: /
 **Orig**:  
 https://acloudguru.com/course/implementing-a-full-ci-cd-pipeline
 
-
 <br/>
 
 Скачать можешь на Шервуде!
 
 <br/>
 
-**Обсуждение:**  
+**Обсуждение:**
+
 https://t.me/otus_devops
 
+Или
+
+https://t.me/devops_community
 
 <br/>
 
-### [Challenges] 
+**Инстркцию, если собирется народ пишем здесь.**
+
+Разбираем материал. Создаем пошаговую инструкцию. Остается "навсегда".
+
+Я создам, если что. Можно будет отправлять pull request с исправлениями, добавлениями и замечаниями.
+
+<br/>
+
+### [Challenges]
 
 <a href="/challenges/">Challenges</a>.
-
 
 <br/>
 
