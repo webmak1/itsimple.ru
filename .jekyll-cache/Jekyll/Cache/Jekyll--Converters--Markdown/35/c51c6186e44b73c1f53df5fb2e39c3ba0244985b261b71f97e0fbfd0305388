@@ -1,0 +1,41 @@
+I"�<hr />
+<p>layout: page
+title: [A Cloud Guru, Linux Academy] Внедрение полного конвейера CI/CD [RUS, 2020] - 02. Управление версиями исходного кода
+description: [A Cloud Guru, Linux Academy] Внедрение полного конвейера CI/CD [RUS, 2020] - 02. Управление версиями исходного кода
+keywords: Видеокурсы по DevOps, Внедрение полного конвейера CI/CD, Установка Git
+permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/source-control-management/</p>
+
+<h1 id="a-cloud-guru-linux-academy-внедрение-полного-конвейера-cicd-rus-2020">[A Cloud Guru, Linux Academy] Внедрение полного конвейера CI/CD [RUS, 2020]</h1>
+
+<p><br /></p>
+
+<h2 id="02-управление-версиями-исходного-кода">02. Управление версиями исходного кода</h2>
+
+<p><br /></p>
+
+<h3 id="05-установка-git">05. Установка Git</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ apt install -y git
+
+$ git config user.name "username"
+$ git config user.email "useremail@gmail.com"
+</code></pre></div></div>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh-keyget -t rsa -b 4096
+$ cat ~/.ssh/id_rsa.pub
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>GitHub -&gt; Settings -&gt; SSH and GPG keys</p>
+
+<p>New SSH key</p>
+
+<p><br /></p>
+
+<p>Title: <ComputerHostname></ComputerHostname></p>
+
+<p>Key: <SSH_PUBLIC_KEY></SSH_PUBLIC_KEY></p>
+:ET
