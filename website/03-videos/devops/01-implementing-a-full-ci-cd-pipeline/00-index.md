@@ -24,6 +24,8 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/
 - Полностью автоматизированное развертывание
 ```
 
+<br/>
+
 **Содержание:**
 
 ```
@@ -95,7 +97,7 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/
 
 <br/>
 
-**Original**:  
+**Ссылка на оригинальный курс:**  
 https://acloudguru.com/course/implementing-a-full-ci-cd-pipeline
 
 <br/>
@@ -111,3 +113,14 @@ https://t.me/otus_devops
 Или
 
 https://t.me/devops_community
+
+<br/>
+
+**Исходные коды приложения:**  
+https://github.com/linuxacademy/cicd-pipeline-train-schedule-git
+
+<br/>
+
+<br/>
+
+## [02. Управление версиями исходного кода](/videos/devops/implementing-a-full-ci-cd-pipeline/source-control-management/)
