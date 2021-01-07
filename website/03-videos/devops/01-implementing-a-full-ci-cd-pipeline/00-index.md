@@ -121,6 +121,14 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-git
 
 <br/>
 
+**Работаю в Ubuntu 20.04**
+
+    $ mkdir ~/projects/dev/devops
+    $ cd ~/projects/dev/devops
+    $ git clone https://github.com/webmak1/cicd-pipeline-train-schedule-git
+
 <br/>
 
-## [02. Управление версиями исходного кода](/videos/devops/implementing-a-full-ci-cd-pipeline/source-control-management/)
+### [02. Управление версиями исходного кода](/videos/devops/implementing-a-full-ci-cd-pipeline/source-control-management/)
+
+### [03. Автоматизация сборки](/videos/devops/implementing-a-full-ci-cd-pipeline/build-automation/)

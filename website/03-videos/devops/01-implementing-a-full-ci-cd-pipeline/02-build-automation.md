@@ -3,38 +3,46 @@ layout: page
 title: Видеокурсы по DevOps - Внедрение полного конвейера CI/CD - 02. Управление версиями исходного кода
 description: Видеокурсы по DevOps - Внедрение полного конвейера CI/CD - 02. Управление версиями исходного кода
 keywords: Видеокурсы по DevOps, Внедрение полного конвейера CI/CD
-permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/source-control-management/
+permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/build-automation/
 ---
 
 # [A Cloud Guru, Linux Academy] Внедрение полного конвейера CI/CD [RUS, 2020]
 
 <br/>
 
-## 02. Управление версиями исходного кода
+## 03. Автоматизация сборки
 
 <br/>
 
-### 05. Установка Git
+### 11. Установка Gradle
 
-    $ apt install -y git
-
-    $ git config user.name "username"
-    $ git config user.email "useremail@gmail.com"
+Устанавливаю <a href="//javadev.org/devtools/jdk/install/linux/">JDK8</a>
 
 <br/>
 
-    $ ssh-keyget -t rsa -b 4096
-    $ cat ~/.ssh/id_rsa.pub
+Устанавливаю <a href="//javadev.org/devtools/assembly-tools/gradle/linux/ubuntu/">Gradle</a>
 
 <br/>
 
-GitHub -> Settings -> SSH and GPG keys
+### Запуск Gradle Wrapper
 
-New SSH key
+    $ cd cicd-pipeline-train-schedule-git
+    $ gradle wrapper
 
-<br/>
+Добавить в .gitignore
 
 ```
-Title: <ComputerHostname>
-Key: <SSH_PUBLIC_KEY>
+.gradle
 ```
+
+    $ ./gradlew build
+
+<!--
+
+<br/>
+
+### 12. Основы Gradle
+
+    $ gradle init
+
+-->
