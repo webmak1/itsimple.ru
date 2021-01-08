@@ -97,7 +97,7 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/
 
 <br/>
 
-**Ссылка на оригинальный курс:**  
+**Ссылка на сайт курса:**  
 https://acloudguru.com/course/implementing-a-full-ci-cd-pipeline
 
 <br/>
@@ -134,3 +134,5 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-git
 ### [02. Управление версиями исходного кода](/videos/devops/implementing-a-full-ci-cd-pipeline/source-control-management/)
 
 ### [03. Автоматизация сборки](/videos/devops/implementing-a-full-ci-cd-pipeline/build-automation/)
+
+### [04. Непрерывная интеграция](/videos/devops/implementing-a-full-ci-cd-pipeline/continuous-integration/)

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Видеокурсы по DevOps - Внедрение полного конвейера CI/CD - 02. Управление версиями исходного кода
-description: Видеокурсы по DevOps - Внедрение полного конвейера CI/CD - 02. Управление версиями исходного кода
-keywords: Видеокурсы по DevOps, Внедрение полного конвейера CI/CD
+title: Видеокурсы по DevOps - Внедрение полного конвейера CI/CD - 03. Автоматизация сборки
+description: Видеокурсы по DevOps - Внедрение полного конвейера CI/CD - 03. Автоматизация сборки
+keywords: Видеокурсы по DevOps, Внедрение полного конвейера CI/CD, Автоматизация сборки
 permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/build-automation/
 ---
 
