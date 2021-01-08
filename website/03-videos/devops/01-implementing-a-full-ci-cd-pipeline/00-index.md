@@ -123,6 +123,8 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-git
 
 **Работаю в Ubuntu 20.04**
 
+<br/>
+
     $ mkdir ~/projects/dev/devops
     $ cd ~/projects/dev/devops
     $ git clone https://github.com/webmak1/cicd-pipeline-train-schedule-git
