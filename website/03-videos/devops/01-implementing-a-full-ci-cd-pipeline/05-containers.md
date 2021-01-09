@@ -14,19 +14,33 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/containers/
 
 <br/>
 
-Устанавливаю <a href="//sysadm.ru/devops/containers/docker/setup/ubuntu/">Docker</a> на хосте, на котором уже уснановлен Jenkis.
-
-<br/>
-
-https://github.com/linuxacademy/cicd-pipeline-train-schedule-docker/blob/example-solution/Dockerfile
+Устанавливаю <a href="//sysadm.ru/devops/containers/docker/setup/ubuntu/">Docker</a> на хосте, на котором уже уснановлен Jenkis и на хост, где будет запускаться приложение.
 
 <br/>
 
 ### 26. Установка Docker в Jenkins
 
+<br/>
+
+**На хосте, где установлен jenkns**
+
+Устанавливаю Jenkins плагин: Docker Pipeline
+
+<br/>
+
+    $ sudo apt-get install -y sshpass
+
+<br/>
+
     $ sudo usermod -aG docker jenkins
     $ sudo systemctl restart jenkins
     $ sudo systemctl restart docker
+
+<br/>
+
+**На сервере добавил:**
+
+    # sudo usermod -aG docker deploy
 
 <br/>
 
@@ -40,16 +54,14 @@ Manage Jenkins -> Configure System
 
 Global properties
 
--   Environment variables
+> Environment variables
 
 <br/>
 
 ```
-Name: prod_id
-Value: <IP>
+Name: prod_ip
+Value: 192.168.0.12
 ```
-
-<br/>
 
 <br/>
 
@@ -57,8 +69,12 @@ Value: <IP>
 
 Manage Jenkins -> Credentials
 
-webserver_login
-docker_hub_login
+-   webserver_login (был создан ранее)
+-   docker_hub_login
+
+<br/>
+
+**Импортирую:**
 
 https://github.com/linuxacademy/cicd-pipeline-train-schedule-dockerdeploy
 
@@ -67,3 +83,16 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-dockerdeploy
 Финальная версия Jenkinsfile из демонстрации в ветке example-solution данного проекта:
 
 https://github.com/linuxacademy/cicd-pipeline-train-schedule-dockerdeploy/blob/example-solution/Jenkinsfile
+
+Нужно заменить:
+
+willbla на свой docker login.
+
+Запускать:
+
+http://192.168.0.12:8080/
+
+<br/>
+
+Отработало.  
+Приложение запустилось!

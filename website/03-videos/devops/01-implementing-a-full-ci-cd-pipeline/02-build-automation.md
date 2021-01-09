@@ -27,11 +27,17 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/build-automation/
     $ cd cicd-pipeline-train-schedule-git
     $ gradle wrapper
 
+<br/>
+
 Добавить в .gitignore
+
+<br/>
 
 ```
 .gradle
 ```
+
+<br/>
 
     $ ./gradlew build
 

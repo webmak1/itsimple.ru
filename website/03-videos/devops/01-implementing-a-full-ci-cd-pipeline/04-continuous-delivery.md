@@ -14,15 +14,141 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/continuous-delivery
 
 <br/>
 
+Стартую Vagrant с 2 виртуальками.
+
+https://github.com/webmakaka/cats-app-ansible/
+
+<br/>
+
+Создаю пользователя "deploy". И убеждаюсь, что могу подключиться по SSH данным пользователем с хоста, где установлен Jenkins.
+
+<br/>
+
+### Controller и Node
+
+**Создаю пользователя "deploy"**
+
+    $ sudo su  -
+    # adduser --disabled-password --gecos "" deploy
+    # usermod -aG sudo deploy
+    # passwd deploy
+
+    # sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/ssh/sshd_config
+    # service sshd reload
+
+<br/>
+
+**Не спрашивать sudo пароль:**
+
+<br/>
+
+    $ sudo su -
+
+    # vi /etc/sudoers
+
+<br/>
+
+    %sudo   ALL=(ALL:ALL) ALL
+
+меняю на:
+
+```shell
+#%sudo   ALL=(ALL:ALL) ALL
+%sudo   ALL=(ALL:ALL) NOPASSWD:ALL
+```
+
+<br/>
+
+Убеждаюсь, что могу подключиться по SSH
+
+    $ ssh deploy@192.168.0.11
+    $ ssh deploy@192.168.0.12
+
+<br/>
+
+Запускаю приложение на серверах
+
+    $ sudo mkdir -p /opt/train-schedule/
+    $ cd /opt/train-schedule/
+    $ sudo git clone https://github.com/linuxacademy/cicd-pipeline-train-schedule-cd .
+
+<br/>
+
+**Устанавливаю Node**
+
+    $ sudo apt install -y nodejs npm
+    $ sudo apt install -y unzip
+
+<br/>
+
+    $ cd /opt/train-schedule/
+    $ sudo npm install
+    $ sudo npm start
+
+<br/>
+
+http://192.168.0.11:3000/
+OK
+
+<br/>
+
+### Создаем сервис systemctl
+
+<br/>
+
+    $ sudo vi /etc/systemd/system/train-schedule.service
+
+<br/>
+
+```
+[Unit]
+Description=nodejs-app
+After=network.target
+
+[Service]
+Environment=NODE_PORT=3000
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/train-schedule
+ExecStart=/usr/bin/nodejs bin/www
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+<br/>
+
+    $ sudo systemctl enable train-schedule.service
+    $ sudo systemctl start train-schedule.service
+    $ sudo systemctl status train-schedule.service
+
+<br/>
+
+    // Выгрузить если что-то пошло не так
+    // # systemctl stop train-schedule.service
+    // # systemctl disable train-schedule.service
+
+<br/>
+
+http://192.168.0.11:3000/
+OK
+
+<br/>
+
+    $ sudo chown -R deploy /opt/train-schedule/
+
+<br/>
+
+**Нужно, чтобы отрабатывала:**
+
+```
+$ sudo /usr/bin/systemctl stop train-schedule && rm -rf /opt/train-schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train-schedule && sudo /usr/bin/systemctl start train-schedule
+```
+
+<br/>
+
 ### 20. Развертывание с Jenkins Pipelines - Часть 1
-
-https://github.com/linuxacademy/cicd-pipeline-train-schedule-cd
-
-Пользователь deploy
-
-systemctl
-
-===================
 
 **Jenkins**
 
@@ -43,10 +169,8 @@ SSH Servers -> Add
 Server1
 
 ```
-
-
 Name: staging
-Nostname: ip
+Nostname: 192.168.0.11
 
 Username:
 Remote Directory: /
@@ -56,19 +180,21 @@ Server2
 
 ```
 Name: production
-Nostname: ip
+Nostname: 192.168.0.12
 
 Username:
 Remote Directory: /
 ```
 
+SAVE
+
 <br/>
 
-Jenkins -> Credentials
+Jenkins -> Manage Jenkins -> Manage Credentials
 
-Jenkins
+Stores scoped to Jenkins -> Jenkins
 
-Global credentials -> Add Credentials
+Global credentials (unrestricted) -> Add Credentials
 
 Username: deploy
 Password: deploy
@@ -98,10 +224,14 @@ Add
 <br/>
 
 Gredentials: GitHub API Key
-Owner: GithubUsername
-Repostitory: cicd-pipeline-train-schedule-cd
+
+Repostitory HTTPS URL: cicd-pipeline-train-schedule-cd
+
+Validate
 
 Save
+
+<br/>
 
 На этом шаге только сборка. Нет доставки.
 
@@ -114,3 +244,15 @@ Save
 Заменить содержимое Jenkinsfile на
 
 https://github.com/linuxacademy/cicd-pipeline-train-schedule-cd/blob/example-solution/Jenkinsfile
+
+<br/>
+
+Меняю текст
+
+https://github.com/webmak1/cicd-pipeline-train-schedule-cd/blob/master/views/index.jade
+
+<br/>
+
+Запускаю jenkins job.
+
+Все ок.

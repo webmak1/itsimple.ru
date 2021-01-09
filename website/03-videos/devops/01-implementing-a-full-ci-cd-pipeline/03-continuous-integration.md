@@ -46,7 +46,7 @@ Git -> https://github.com/linuxacademy/cicd-pipeline-train-schedule-jenkins
 
 <br/>
 
-Build -> Add build step -> Invode Gradle script
+Build -> Add build step -> Invoke Gradle script
 
 Use Gradle Wrapper
 
@@ -92,7 +92,7 @@ Manage Jenkins -> Configure System
 
 Github -> GitHub Server
 
-Name: Github
+Name: GitHub
 
 Credentials -> Add -> Jenkins
 
@@ -122,13 +122,13 @@ Configure
 
 Source Code Management
 
-Git -> my url
+Git -> https://github.com/webmak1/cicd-pipeline-train-schedule-jenkins
 
 <br/>
 
 Build Trigger
 
--   Github hook trigger for GITScm polling
+-   GitHub hook trigger for GITScm polling
 
 SAVE
 
@@ -136,7 +136,19 @@ SAVE
 
 **GitHub**
 
-Settings -> Webhooks
+Должен появиться Webhook.
+
+App -> Settings -> Webhooks
+
+Но он появится, только если использовать public ip.
+
+С localhost будет вот такое:
+
+<br/>
+
+```
+{"resource":"Hook","code":"custom","message":"Sorry, the URL host localhost is not supported because it isn't reachable over the public Internet"}
+```
 
 <br/>
 

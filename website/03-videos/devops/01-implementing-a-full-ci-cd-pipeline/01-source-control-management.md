@@ -16,14 +16,18 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/source-control-mana
 
 ### 05. Установка Git
 
+<br/>
+
     $ apt install -y git
+
+<br/>
 
     $ git config user.name "username"
     $ git config user.email "useremail@gmail.com"
 
 <br/>
 
-    $ ssh-keyget -t rsa -b 4096
+    $ ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -q -N ""
     $ cat ~/.ssh/id_rsa.pub
 
 <br/>
