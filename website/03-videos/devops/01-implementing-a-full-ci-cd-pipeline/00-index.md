@@ -136,3 +136,7 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-git
 ### [03. Автоматизация сборки](/videos/devops/implementing-a-full-ci-cd-pipeline/build-automation/)
 
 ### [04. Непрерывная интеграция](/videos/devops/implementing-a-full-ci-cd-pipeline/continuous-integration/)
+
+### [05. Непрерывная доставка](/videos/devops/implementing-a-full-ci-cd-pipeline/continuous-delivery/)
+
+### [06. Контейнеры](/videos/devops/implementing-a-full-ci-cd-pipeline/containers/)
