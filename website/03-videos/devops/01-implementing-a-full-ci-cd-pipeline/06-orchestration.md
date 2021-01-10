@@ -24,7 +24,9 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-kubernetes
 
 <br/>
 
+Kubernetes
 Также установил Plugin "Kubernetes Client API"
+
 
 -->
 
@@ -48,11 +50,11 @@ Kind -> Kubernetes configuration (kubeconfig)
 id: kubeconfig
 Description: Kubeconfig
 
-// Делаем в видео так
 Kubeconfig -> Enter directly ->
 
-Вставляю содержимое вайла
-$ cat /home/marley/.kube/config
+Вставляю содержимое файла
+
+    $ cat /home/marley/.kube/config
 
 <br/>
 
