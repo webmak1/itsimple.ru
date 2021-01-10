@@ -117,7 +117,9 @@ https://t.me/devops_community
 <br/>
 
 **Исходные коды приложения:**  
-https://github.com/linuxacademy/cicd-pipeline-train-schedule-git
+https://github.com/linuxacademy/
+
+Куча репозиториев с именем, начинающимся на: cicd-pipeline-train-schedule
 
 <br/>
 
@@ -140,3 +142,5 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-git
 ### [05. Непрерывная доставка](/videos/devops/implementing-a-full-ci-cd-pipeline/continuous-delivery/)
 
 ### [06. Контейнеры](/videos/devops/implementing-a-full-ci-cd-pipeline/containers/)
+
+### [07. Оркестрация](/videos/devops/implementing-a-full-ci-cd-pipeline/orchestration/)

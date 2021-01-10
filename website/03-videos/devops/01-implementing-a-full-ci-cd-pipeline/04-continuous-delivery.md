@@ -14,9 +14,7 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/continuous-delivery
 
 <br/>
 
-Стартую Vagrant с 2 виртуальками.
-
-https://github.com/webmakaka/cats-app-ansible/
+Стартую Vagrant с 2 виртуальками <a href="https://github.com/webmakaka/cats-app-ansible/">как здесь</a>.
 
 <br/>
 
