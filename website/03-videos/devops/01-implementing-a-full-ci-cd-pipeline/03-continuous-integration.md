@@ -16,7 +16,7 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/continuous-integrat
 
 ### 15. Установка Jenkins
 
-Устанавливаю <a href="//javadev.org/devtools/cicd/jenkins/install/ubuntu/20.04/">Jenkins</a>
+Устанавливаю <a href="//javadev.org/devtools/cicd/jenkins/setup/ubuntu/20.04/">Jenkins</a>
 
 <br/>
 

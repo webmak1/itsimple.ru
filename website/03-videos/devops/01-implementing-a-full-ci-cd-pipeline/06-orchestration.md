@@ -12,13 +12,177 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/orchestration/
 
 ## 07. Оркестрация
 
+<br/>
+
+### Поднимаю локальный kubernetes кластер
+
+Разворачиваю <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-centos7">kubernetes</a> в виртуалках.
+
+<br/>
+
+### Поднимаю в виртуалке Jenkis
+
+Прежний вариант пришлось удалить
+
+    $  mkdir ~/vagrant-jenkins && cd ~/vagrant-jenkins
+
+<br/>
+
+// Создаю Vagrantfile для виртуалки
+
+<br/>
+
+```
+$ cat <<EOF >> Vagrantfile
+
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+ENV['VAGRANT_NO_PARALLEL'] = 'yes'
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/focal64"
+  config.hostmanager.enabled = true
+  config.hostmanager.include_offline = true
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "4096"
+    vb.cpus = 2
+  end
+
+  config.vm.define "jenkins.k8s" do |c|
+    c.vm.hostname = "jenkins.k8s"
+    c.vm.network "private_network", ip: "192.168.0.5"
+  end
+end
+EOF
+```
+
+<br/>
+
+    $ vagrant up
+
+<br/>
+
+    $ vagrant ssh jenkins.k8s
+
+<br/>
+
+    $ sudo apt update
+    $ sudo apt upgrade -y
+
+<br/>
+
+**Создаю пользователя "jenkins"**
+
+    $ sudo su  -
+    # adduser --disabled-password --gecos "" jenkins
+    # usermod -aG sudo jenkins
+    # passwd jenkins
+
+    # sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/ssh/sshd_config
+    # service sshd reload
+
+<br/>
+
+    	# vi /etc/sudoers
+
+<br/>
+
+    %sudo   ALL=(ALL:ALL) ALL
+
+меняю на:
+
+```shell
+#%sudo   ALL=(ALL:ALL) ALL
+%sudo   ALL=(ALL:ALL) NOPASSWD:ALL
+```
+
+<br/>
+
+Устанавливаю <a href="//javadev.org/devtools/jdk/setup/linux/">JDK8</a>
+
+Устанавливаю <a href="//javadev.org/devtools/assembly-tools/gradle/linux/ubuntu/">Gradle</a>
+
+Устанавливаю <a href="//javadev.org/devtools/cicd/jenkins/setup/ubuntu/20.04/">Jenkins</a>
+
+Устанавливаю <a href="//sysadm.ru/devops/containers/docker/setup/ubuntu/">Docker</a>
+
+<br/>
+
+    $ sudo usermod -aG docker jenkins
+    $ sudo systemctl restart jenkins
+    $ sudo systemctl restart docker
+
+<br/>
+
+http://192.168.0.5:8080/
+
+<br/>
+
+    $ ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -q -N ""
+    $ cat ~/.ssh/id_rsa.pub
+
+<br/>
+
+Вставляем на GitHub
+
+<br/>
+
+GitHub -> Settings -> SSH and GPG keys
+
+<br/>
+
+**Jenkins**
+
+<br/>
+
+    $ docker login --username=<hub username> --email=<hub email>
+
+<br/>
+
+Manage Jenkins -> Credentials
+
+<br/>
+
+![Jenkins](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-06-docker_hub_login.png 'Jenkins'){: .center-image }
+
+<br/>
+
+github_token -> github_api_key (Думаю, нужен только для хуков).
+
+<br/>
+
+    $ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && chmod +x kubectl && sudo mv kubectl /usr/local/bin/
+
+    $ mkdir -p ~/.kube
+
+    // root password: kubeadmin
+    $ scp root@192.168.0.10:/etc/kubernetes/admin.conf ~/.kube/config
+
+<br/>
+
+    $ kubectl get nodes
+    NAME         STATUS   ROLES                  AGE    VERSION
+    master.k8s   Ready    control-plane,master   127m   v1.20.1
+    node1.k8s    Ready    <none>                 124m   v1.20.1
+    node2.k8s    Ready    <none>                 120m   v1.20.1
+
+<br/>
+
+### Работа по задаче развертывания с помощью jenkins приложения в локальный kubernetes кластер
+
 Клонируем к себе в репо на гитхаб
 
 https://github.com/linuxacademy/cicd-pipeline-train-schedule-kubernetes
 
 <br/>
 
-В Jenkins Нужно установить Plugin "Kubernetes Continuous Deploy"
+В Jenkins Нужно установить Plugin:
+
+-   "Docker Pipeline"
+-   "Kubernetes Continuous Deploy"
+-   "Publish Over SSH" (может и не нужен здесь)
 
 <!--
 
@@ -27,19 +191,11 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-kubernetes
 Kubernetes
 Также установил Plugin "Kubernetes Client API"
 
-
 -->
 
 <br/>
 
-Разворачиваю <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-centos7">kubernetes</a> в виртуалках.
-
-<br/>
-
-Jenkins -> Credentials:
-
-github_token -> github_api_key
-Docker_hub_login -> создан ранее
+Jenkins
 
 <br/>
 
@@ -54,7 +210,11 @@ Kubeconfig -> Enter directly ->
 
 Вставляю содержимое файла
 
-    $ cat /home/marley/.kube/config
+    $ cat ~/.kube/config
+
+<br/>
+
+![Kubeconfig](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-06-kubeconfig.png 'Kubeconfig'){: .center-image }
 
 <br/>
 

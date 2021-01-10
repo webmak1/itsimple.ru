@@ -16,7 +16,7 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/build-automation/
 
 ### 11. Установка Gradle
 
-Устанавливаю <a href="//javadev.org/devtools/jdk/install/linux/">JDK8</a>
+Устанавливаю <a href="//javadev.org/devtools/jdk/setup/linux/">JDK8</a>
 
 Устанавливаю <a href="//javadev.org/devtools/assembly-tools/gradle/linux/ubuntu/">Gradle</a>
 
