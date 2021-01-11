@@ -14,21 +14,23 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/orchestration/
 
 <br/>
 
-### Поднимаю локальный kubernetes кластер
+Делаю все с 0.
+
+<br/>
+
+### 01. Поднимаю локальный kubernetes кластер
 
 Разворачиваю <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-centos7">kubernetes</a> в виртуалках.
 
 <br/>
 
-### Поднимаю в виртуалке Jenkis
-
-Прежний вариант пришлось удалить
+### 02. Поднимаю в виртуалке Jenkis
 
     $  mkdir ~/vagrant-jenkins && cd ~/vagrant-jenkins
 
 <br/>
 
-// Создаю Vagrantfile для виртуалки
+**Создаю Vagrantfile для виртуалки**
 
 <br/>
 
@@ -86,12 +88,18 @@ EOF
     # usermod -aG sudo jenkins
     # passwd jenkins
 
+<br/>
+
+**Предоставляю возможность подключения по SSH**
+
     # sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/ssh/sshd_config
     # service sshd reload
 
 <br/>
 
-    	# vi /etc/sudoers
+**Разрешаю выполнение команд sudo без пароля**
+
+    # vi /etc/sudoers
 
 <br/>
 
@@ -126,6 +134,8 @@ http://192.168.0.5:8080/
 
 <br/>
 
+### Генерация ключа для работы с GitHub
+
     $ ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -q -N ""
     $ cat ~/.ssh/id_rsa.pub
 
@@ -139,13 +149,19 @@ GitHub -> Settings -> SSH and GPG keys
 
 <br/>
 
+<!--
+
 **Jenkins**
 
 <br/>
 
     $ docker login --username=<hub username> --email=<hub email>
 
+-->
+
 <br/>
+
+### Создаю Credentials
 
 Manage Jenkins -> Credentials
 
@@ -153,9 +169,17 @@ Manage Jenkins -> Credentials
 
 ![Jenkins](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-06-docker_hub_login.png 'Jenkins'){: .center-image }
 
+<!--
+
 <br/>
 
 github_token -> github_api_key (Думаю, нужен только для хуков).
+
+-->
+
+<br/>
+
+### Проверяю возможность работы с kubernetes
 
 <br/>
 
@@ -176,7 +200,7 @@ github_token -> github_api_key (Думаю, нужен только для ху�
 
 <br/>
 
-### Работа по задаче развертывания с помощью jenkins приложения в локальный kubernetes кластер
+### 03. Работа по задаче развертывания с помощью jenkins приложения в локальный kubernetes кластер
 
 Клонируем к себе в репо на гитхаб
 
@@ -184,7 +208,7 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-kubernetes
 
 <br/>
 
-В Jenkins Нужно установить Plugin:
+**В Jenkins Нужно установить Plugin'ы:**
 
 -   "Docker Pipeline"
 -   "Kubernetes Continuous Deploy"
@@ -201,11 +225,11 @@ Kubernetes
 
 <br/>
 
-Jenkins
+**Добавление Credentials:**
+
+Jenkins -> Add Credentials ->
 
 <br/>
-
-Add Credentials ->
 
 Kind -> Kubernetes configuration (kubeconfig)
 
@@ -224,6 +248,8 @@ Kubeconfig -> Enter directly ->
 
 <br/>
 
+### Создание нового задания
+
 Jenkins -> New Item
 
 Name: train-schedule
@@ -233,7 +259,7 @@ Type: Multibranch Pipeline
 
 Branch Source -> GitHub
 
-Credentials -> Github API Key
+<!--Credentials -> Github API Key -->
 
 Repository HTTPS URL
 
@@ -242,6 +268,14 @@ https://github.com/webmak1/cicd-pipeline-train-schedule-kubernetes
 validate.
 
 <br/>
+
+### Изменения в проекте для Deploy
+
+**У меня уже все сделано!**
+
+<br/>
+
+Делается следующим образом.
 
 Добавляем в проект github
 
@@ -325,9 +359,13 @@ Finished: FAILURE
 
 <br/>
 
-192.168.0.11:8080
+Далее, по идее мы должны будем подключиться к нодам. Т.к. никаких ingress не настраивалось.
 
 <!--
+
+192.168.0.11:8080
+
+
 <br/>
 
 Downgrade
