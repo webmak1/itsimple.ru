@@ -12,9 +12,7 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/orchestration/
 
 ## 07. Оркестрация
 
-<br/>
-
-Делаю все с 0.
+**Делаю все с 0. На виртуалках.**
 
 <br/>
 
