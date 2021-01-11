@@ -73,6 +73,12 @@ EOF
 
 <br/>
 
+    $ sudo apt install -y \
+        openssh-server \
+        rar unrar-free
+
+<br/>
+
 **Создаю пользователя "jenkins"**
 
     $ sudo su  -
