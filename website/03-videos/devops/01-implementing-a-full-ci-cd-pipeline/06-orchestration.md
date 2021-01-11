@@ -75,7 +75,8 @@ EOF
 
     $ sudo apt install -y \
         openssh-server \
-        rar unrar-free
+        rar unrar-free \
+        unzip
 
 <br/>
 
@@ -91,6 +92,7 @@ EOF
 **Предоставляю возможность подключения по SSH**
 
     # sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/ssh/sshd_config
+
     # service sshd reload
 
 <br/>
@@ -116,9 +118,9 @@ EOF
 
 Устанавливаю <a href="//javadev.org/devtools/assembly-tools/gradle/linux/ubuntu/">Gradle</a>
 
-Устанавливаю <a href="//javadev.org/devtools/cicd/jenkins/setup/ubuntu/20.04/">Jenkins</a>
-
 Устанавливаю <a href="//sysadm.ru/devops/containers/docker/setup/ubuntu/">Docker</a>
+
+Устанавливаю <a href="//javadev.org/devtools/cicd/jenkins/setup/ubuntu/20.04/">Jenkins</a>
 
 <br/>
 
@@ -135,6 +137,7 @@ http://192.168.0.5:8080/
 ### Генерация ключа для работы с GitHub
 
     $ ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -q -N ""
+
     $ cat ~/.ssh/id_rsa.pub
 
 <br/>
@@ -287,7 +290,7 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-kubernetes/blob/exa
 
 <br/>
 
-На шаге развертывания ошибка.
+**На шаге развертывания ошибка.**
 
 ```
 ERROR: ERROR: Can't construct a java object for tag:yaml.org,2002:io.kubernetes.client.openapi.models.V1Service; exception=Class not found: io.kubernetes.client.openapi.models.V1Service
@@ -357,27 +360,118 @@ Finished: FAILURE
 
 <br/>
 
-Далее, по идее мы должны будем подключиться к нодам. Т.к. никаких ingress не настраивалось.
+### Ничего не заработало с помощью этого Jenkins
 
-<!--
+Пишут, что нужно сделать DownGrade плагинов:
 
-192.168.0.11:8080
+```
+Jackson 2 API v2.10.0,
 
+Kubernetes v1.21.3,
+
+Kubernetes Client API v4.6.3-1,
+
+Kubernetes Continuous Deploy v2.1.2,
+
+Kubernetes Credentials v0.5.0
+```
 
 <br/>
 
-Downgrade
+Возможно, что также нужно делать DownGrade:
 
+```
+
+Snakeyaml API to v1.26.2
+GitHub Branch Source 2.7.1
+
+```
+
+<br/>
+
+**Downgrade:**  
 https://www.youtube.com/watch?v=d6BU8LBc9Ow
 
-Jackson 2 API to v2.10.3
-Snakeyaml API to v1.26.2
-github-branch-source 2.7.1
+<br/>
 
-kubernetes client api 4.9.1-1
+**Скачать плагины:**  
+https://plugins.jenkins.io/
 
-Скачиваю:
+<br/>
 
 Jenkins -> Plugins -> Advanced -> Upload
 
-https://plugins.jenkins.io/ -->
+<br/>
+
+### Запускаю руками
+
+    $ kubectl get nodes
+    NAME         STATUS   ROLES                  AGE   VERSION
+    master.k8s   Ready    control-plane,master   19h   v1.20.1
+    node1.k8s    Ready    <none>                 19h   v1.20.1
+    node2.k8s    Ready    <none>                 19h   v1.20.1
+
+<br/>
+
+```
+$ cat <<EOF | kubectl apply -f -
+kind: Service
+apiVersion: v1
+metadata:
+  name: train-schedule-service
+spec:
+  type: NodePort
+  selector:
+    app: train-schedule
+  ports:
+  - protocol: TCP
+    port: 8080
+    nodePort: 30001
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: train-schedule-deployment
+  labels:
+    app: train-schedule
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: train-schedule
+  template:
+    metadata:
+      labels:
+        app: train-schedule
+    spec:
+      containers:
+      - name: train-schedule
+        image: webmakaka/train-schedule
+        ports:
+        - containerPort: 8080
+EOF
+```
+
+<br/>
+
+    $ kubectl get pods
+    NAME                                         READY   STATUS    RESTARTS   AGE
+    train-schedule-deployment-67bfb5f9db-29cnj   1/1     Running   0          100s
+    train-schedule-deployment-67bfb5f9db-q8kvm   1/1     Running   0          100s
+
+<br/>
+
+    $ kubectl get svc
+    NAME                     TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+    kubernetes               ClusterIP   10.96.0.1       <none>        443/TCP          19h
+    train-schedule-service   NodePort    10.105.61.230   <none>        8080:30001/TCP   73s
+
+<br/>
+
+http://node1.k8s:30001
+
+<br/>
+
+![Kubeconfig](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-06-result.png 'Kubeconfig'){: .center-image }
