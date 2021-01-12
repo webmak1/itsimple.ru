@@ -12,101 +12,6 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/monitoring/
 
 ## 08. Мониторинг
 
-Команды, использованные для установки в этом уроке:
-
-**На мастер узле:**
-
-    $ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > /tmp/get_helm.sh
-    $ chmod 700 /tmp/get_helm.sh
-
-    $ DESIRED_VERSION=v2.8.2 /tmp/get_helm.sh
-    $ helm init --wait
-    $ kubectl --namespace=kube-system create clusterrolebinding add-on-cluster-admin
-    --clusterrole=cluster-admin --serviceaccount=kube-system:default
-
-    $ helm ls
-    $ cd ~/
-    $ git clone https://github.com/kubernetes/charts
-    $ cd charts
-    $ git checkout efdcffe0b6973111ec6e5e83136ea74cdbe6527d
-    $ cd ../
-
-<br/>
-
-### 01. Prometheus
-
-    $ vi prometheus-values.yml
-
-```
-alertmanager:
-  persistentVolume:
-    enabled: false
-server:
-  persistentVolume:
-    enabled: false
-```
-
-<br/>
-
-    $ helm install -f prometheus-values.yml charts/stable/prometheus --name prometheus --namespace prometheus
-
-    $ kubectl get pods -n prometheus
-
-<br/>
-
-### 02. Grafana
-
-    $ vi grafana-values.yml
-
-```
-adminPassword: password
-```
-
-    $ helm install -f grafana-values.yml charts/stable/grafana/ --name grafana --namespace grafana
-
-    $ vi grafana-ext.yml
-
-```
-kind: Service
-apiVersion: v1
-metadata:
-  namespace: grafana
-  name: grafana-ext
-spec:
-  type: NodePort
-  selector:
-    app: grafana
-  ports:
-  -   protocol: TCP
-      port: 3000
-      nodePort: 8080
-```
-
-<br/>
-
-    $ kubectl apply -f grafana-ext.yml
-
-<br/>
-
-    $ kubectl get pods -n prometheus
-    $ kubectl get pods -n grafana
-
-<br/>
-
-    http://node1.k8s:30001
-
-<br/>
-
-Add data source - Prometheus
-
-Name: Prometheus
-
-URL: http://prometheus-server.prometheus.svc.cluster.local
-
-Save and test
-
-# ======================================
-
 <br/>
 
 Запускаю [локальный kubernetes кластер](https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-centos7)
@@ -296,3 +201,9 @@ sum(rate(http_request_duration_ms_count[2m])) by (service, route, method,code) *
 <br/>
 
 Для алертов отдельная вкладка.
+
+<br/>
+
+**Документация Grafana по оповещениям:**
+
+http://docs.grafana.org/alerting/rules/​ .
