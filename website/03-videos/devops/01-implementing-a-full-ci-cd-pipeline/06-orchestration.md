@@ -24,7 +24,7 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/orchestration/
 
 ### 02. Поднимаю в виртуалке Jenkis
 
-    $  mkdir ~/vagrant-jenkins && cd ~/vagrant-jenkins
+    $ mkdir ~/vagrant-jenkins && cd ~/vagrant-jenkins
 
 <br/>
 
@@ -168,7 +168,7 @@ Manage Jenkins -> Credentials
 
 <br/>
 
-![Jenkins](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-06-docker_hub_login.png 'Jenkins'){: .center-image }
+![Jenkins](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-m06-pic01.png 'Jenkins'){: .center-image }
 
 <!--
 
@@ -245,7 +245,7 @@ Kubeconfig -> Enter directly ->
 
 <br/>
 
-![Kubeconfig](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-06-kubeconfig.png 'Kubeconfig'){: .center-image }
+![Kubeconfig](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-m06-pic02.png 'Kubeconfig'){: .center-image }
 
 <br/>
 
@@ -474,4 +474,11 @@ http://node1.k8s:30001
 
 <br/>
 
-![Kubeconfig](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-06-result.png 'Kubeconfig'){: .center-image }
+![Kubeconfig](/img/videos/devops/implementing-a-full-ci-cd-pipeline/pic-m06-pic03.png'Kubeconfig'){: .center-image }
+
+<br/>
+
+### Удаля созданные ресурсы
+
+    $ kubectl delete svc train-schedule-service
+    $ kubectl delete deployment train-schedule-deployment

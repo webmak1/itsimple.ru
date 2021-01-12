@@ -144,3 +144,5 @@ https://github.com/linuxacademy/
 ### [06. Контейнеры](/videos/devops/implementing-a-full-ci-cd-pipeline/containers/)
 
 ### [07. Оркестрация](/videos/devops/implementing-a-full-ci-cd-pipeline/orchestration/)
+
+### [08. Мониторинг](/videos/devops/implementing-a-full-ci-cd-pipeline/monitoring/)
