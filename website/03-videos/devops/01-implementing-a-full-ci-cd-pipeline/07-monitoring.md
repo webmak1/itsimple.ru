@@ -206,4 +206,11 @@ sum(rate(http_request_duration_ms_count[2m])) by (service, route, method,code) *
 
 **Документация Grafana по оповещениям:**
 
-http://docs.grafana.org/alerting/rules/​ .
+http://docs.grafana.org/alerting/rules/​
+
+<br/>
+
+### Удаляю созданные ресурсы
+
+    $ kubectl delete svc train-schedule-service
+    $ kubectl delete deployment train-schedule-deployment

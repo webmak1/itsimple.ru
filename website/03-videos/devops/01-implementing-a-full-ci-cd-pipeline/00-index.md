@@ -146,3 +146,9 @@ https://github.com/linuxacademy/
 ### [07. Оркестрация](/videos/devops/implementing-a-full-ci-cd-pipeline/orchestration/)
 
 ### [08. Мониторинг](/videos/devops/implementing-a-full-ci-cd-pipeline/monitoring/)
+
+### [10. Автоматическое масштабирование](/videos/devops/implementing-a-full-ci-cd-pipeline/autoscaling/)
+
+### [11. Канареечное тестирование](/videos/devops/implementing-a-full-ci-cd-pipeline/canary-testing/)
+
+### [12. Реализация полностью автоматического развертывания](/videos/devops/implementing-a-full-ci-cd-pipeline/fully-automated-deployment/)

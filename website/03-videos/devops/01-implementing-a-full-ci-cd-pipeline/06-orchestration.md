@@ -478,7 +478,7 @@ http://node1.k8s:30001
 
 <br/>
 
-### Удаля созданные ресурсы
+### Удаляю созданные ресурсы
 
     $ kubectl delete svc train-schedule-service
     $ kubectl delete deployment train-schedule-deployment
