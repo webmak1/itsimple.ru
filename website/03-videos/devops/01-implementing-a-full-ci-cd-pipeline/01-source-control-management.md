@@ -28,6 +28,9 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/source-control-mana
 <br/>
 
     $ ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -q -N ""
+
+<br/>
+
     $ cat ~/.ssh/id_rsa.pub
 
 <br/>
