@@ -132,7 +132,7 @@ mongodb-746c86846c-v4wd6    1/1     Running   0          46s
 
 <br/>
 
-![Application](/img/pic-lecture02-pic01.png?raw=true)
+![Application](/img/schools/devops/otus/super-intensive/pic-lecture02-pic01.png?raw=true)
 
 <br/>
 

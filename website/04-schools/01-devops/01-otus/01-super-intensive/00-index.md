@@ -57,3 +57,7 @@ permalink: /schools/devops/otus/super-intensive/
 ### [01. Сборка и push контейнеров в registry](/schools/devops/otus/super-intensive/build-and-push/)
 
 ### [02. Запуск приложения в MiniKube](/schools/devops/otus/super-intensive/run-app-in-minikube/)
+
+### [03. Запуск приложения в MiniKube с помощью GitLab]
+
+### [04. Модификация Helm]
