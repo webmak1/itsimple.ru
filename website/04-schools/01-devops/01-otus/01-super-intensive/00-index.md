@@ -33,11 +33,11 @@ permalink: /schools/devops/otus/super-intensive/
 
 <br/>
 
-Инсталляция <a href="/devops/gitops/cvs/gitlab/setup/ubuntu/">GitLab</a>.
+Инсталляция <a href="//sysadm.ru/devops/gitops/cvs/gitlab/setup/ubuntu/">GitLab</a>.
 
 <br/>
 
-Настройка <a href="/devops/gitops/cvs/gitlab/errors/">docker для запуска job</a>.
+Настройка <a href="//sysadm.ru/devops/gitops/cvs/gitlab/errors/">docker для запуска job</a>.
 
 <br/>
 
