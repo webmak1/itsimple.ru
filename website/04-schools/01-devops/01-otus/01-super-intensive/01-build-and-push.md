@@ -98,6 +98,10 @@ frontend-release:
 
 <br/>
 
+Как минимум "webmakaka" нужно изменить на свой логин.
+
+<br/>
+
     $ git commit -am 'Add release stage'
     $ git push origin master
     $ git tag v0.0.1
@@ -105,12 +109,22 @@ frontend-release:
 
 <br/>
 
+**Commit**
+
 ![Devops](/img/schools/devops/otus/super-intensive/pic-lecture01-pic02.png 'Devops'){: .center-image }
 
 <br/>
+
+**Release**
 
 ![Devops](/img/schools/devops/otus/super-intensive/pic-lecture01-pic03.png 'Devops'){: .center-image }
 
 <br/>
 
+**Результат на hub.docker.com**
+
 ![Devops](/img/schools/devops/otus/super-intensive/pic-lecture01-pic04.png 'Devops'){: .center-image }
+
+<br/>
+
+![Devops](/img/schools/devops/otus/super-intensive/pic-lecture01-pic05.png 'Devops'){: .center-image }
