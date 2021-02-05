@@ -39,11 +39,11 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 
 <br/>
 
-Инсталляция <a href="//sysadm.ru/devops/gitops/cvs/gitlab/setup/ubuntu/">GitLab</a>.
+### Инсталляция <a href="//sysadm.ru/devops/gitops/cvs/gitlab/setup/ubuntu/">GitLab</a>.
 
 <br/>
 
-Настройка <a href="//sysadm.ru/devops/gitops/cvs/gitlab/errors/">docker для запуска job'ов</a>.
+### Настройка <a href="//sysadm.ru/devops/gitops/cvs/gitlab/errors/">docker для запуска job'ов</a>.
 
 <br/>
 
