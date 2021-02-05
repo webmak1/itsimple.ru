@@ -10,23 +10,7 @@ permalink: /
 
 ## [Otus] Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
 
-Времени изучать особо нет. Хотелось, чтобы кто-то из тех кто изучает поделились результатами.
-
-Ну там инструкциями как запустить и настроить.
-
-Я бы протестировал финальный результат. Может даже удалось коллективно улучшить что-то.
-
-<br/>
-
-**Изучаемые темы:**
-
--   Введение в Kubernetes
--   Непрерывная поставка в Kubernetes c Helm в Gitlab
--   Интеграция Elastic и Kibana c Kubernetes
-
-<br/>
-
-Скрипты для разварачивания локального kubernetes кластера, можно взять у <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-ubuntu-20.04">меня</a>.
+[Подробнее](/schools/devops/otus/super-intensive/)
 
 <br/>
 
