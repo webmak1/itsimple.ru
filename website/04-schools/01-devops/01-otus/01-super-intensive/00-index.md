@@ -24,6 +24,12 @@ permalink: /schools/devops/otus/super-intensive/
 
 <br/>
 
+### Обсуждение на github
+
+https://github.com/webmak1/itsimple.ru/discussions/1
+
+<br/>
+
 **Итак, что мы имеем:**
 
 <br/>
@@ -38,6 +44,10 @@ permalink: /schools/devops/otus/super-intensive/
 <br/>
 
 Настройка <a href="//sysadm.ru/devops/gitops/cvs/gitlab/errors/">docker для запуска job'ов</a>.
+
+<br/>
+
+Клонируем приложение и пока работаем с контентом из каталога /apps/v1.
 
 <br/>
 
@@ -58,6 +68,6 @@ permalink: /schools/devops/otus/super-intensive/
 
 ### [02. Запуск приложения в MiniKube](/schools/devops/otus/super-intensive/run-app-in-minikube/)
 
-### [03. Запуск приложения в MiniKube с помощью GitLab]
+### [03. Запуск приложения в MiniKube с помощью GitLab](/schools/devops/otus/super-intensive/run-app-in-minikube-gitlab/)
 
-### [04. Модификация Helm]
+### [04. Модификация Helm Chart, чтобы деплоилась обновленная версия проекта]

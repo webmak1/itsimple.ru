@@ -105,6 +105,9 @@ $ {
 
     $ cd guestbook/charts/
 
+<br/>
+
+    // Запуск текстового редактора vscode
     $ code .
 
 <br/>
