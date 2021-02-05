@@ -37,8 +37,21 @@ permalink: /schools/devops/otus/super-intensive/
 
 <br/>
 
-Настройка <a href="//sysadm.ru/devops/gitops/cvs/gitlab/errors/">docker для запуска job</a>.
+Настройка <a href="//sysadm.ru/devops/gitops/cvs/gitlab/errors/">docker для запуска job'ов</a>.
+
+<br/>
+
+**Kubernetes:**
+
+<br/>
+
+Наверное имеет смысл использовать minikube.
+Подумаем над этим.
 
 <br/>
 
 Скрипты для разварачивания локального kubernetes кластера, можно взять <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-ubuntu-20.04">здесь</a>.
+
+<br/>
+
+### [01. Сборка и push контейнеров в registry](/schools/devops/otus/super-intensive/build-and-push/)
