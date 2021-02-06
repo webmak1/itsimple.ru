@@ -68,3 +68,7 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 ### [04. Запуск приложения с помощью GitLab и Helm в MiniKube](/schools/devops/otus/super-intensive/run-app-in-minikube-with-gitlab/)
 
 ### [05. Модификация Helm Chart, чтобы деплоилась обновленная версия проекта]
+
+### [06. Prometheus & Grafaran]
+
+### [07. ELK & KIBANA]
