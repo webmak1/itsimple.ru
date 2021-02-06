@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
-description: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
-keywords: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
+title: 01. Сборка и push контейнеров в registry
+description: 01. Сборка и push контейнеров в registry
+keywords: schools, devops, otus, super intensive, built and push
 permalink: /schools/devops/otus/super-intensive/build-and-push/
 ---
 

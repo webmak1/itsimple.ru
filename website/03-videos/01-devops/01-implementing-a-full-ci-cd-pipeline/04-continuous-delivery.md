@@ -247,7 +247,7 @@ https://github.com/linuxacademy/cicd-pipeline-train-schedule-cd/blob/example-sol
 
 Меняю текст
 
-https://github.com/webmak1/cicd-pipeline-train-schedule-cd/blob/master/views/index.jade
+https://github.com/linuxacademy/cicd-pipeline-train-schedule-cd/blob/master/views/index.jade
 
 <br/>
 

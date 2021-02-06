@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
-description: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
-keywords: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
+title: 02. Запуск приложения в MiniKube с помощью Helm
+description: 02. Запуск приложения в MiniKube с помощью Helm
+keywords: schools, devops, otus, super intensive, run app in minikube with helm
 permalink: /schools/devops/otus/super-intensive/run-app-in-minikube/
 ---
 
-# 02. Запуск приложения в MiniKube
+# 02. Запуск приложения в MiniKube с помощью Helm
 
 <br/>
 
@@ -41,7 +41,7 @@ minikube version: v1.16.0
 $ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && chmod +x kubectl && sudo mv kubectl /usr/local/bin/
 
 $ kubectl version --client --short
-Client Version: v1.20.1
+Client Version: v1.20.2
 
 ```
 
@@ -54,8 +54,8 @@ $ {
     minikube --profile devops-app config set memory 8192
     minikube --profile devops-app config set cpus 4
 
-    // minikube --profile devops-app config set vm-driver virtualbox
-    minikube --profile devops-app config set vm-driver docker
+    minikube --profile devops-app config set vm-driver virtualbox
+    // minikube --profile devops-app config set vm-driver docker
 
     minikube --profile devops-app config set kubernetes-version v1.20.2
     minikube start --profile devops-app
@@ -70,7 +70,7 @@ $ {
 <br/>
 
     $ minikube --profile devops-app ip
-    192.168.59.2
+    192.168.99.100
 
 <br/>
 
@@ -80,8 +80,8 @@ $ {
 #---------------------------------------------------------------------
 # Minikube
 #---------------------------------------------------------------------
-192.168.59.2 frontend.minikube.local
-192.168.59.2 backend.minikube.local
+192.168.99.100 frontend.minikube.local
+192.168.99.100 backend.minikube.local
 ```
 
 <br/>
@@ -90,10 +90,8 @@ $ {
 
     $ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
-    $ kubectl config view
-
     $ helm version --short
-    v3.5.0+g32c2223
+    v3.5.2+g167aac7
 
 <br/>
 
@@ -103,7 +101,7 @@ $ {
 
     $ git clone https://github.com/webmakaka/Packaging-Applications-with-Helm-for-Kubernetes .
 
-    $ cd guestbook/charts/
+    $ cd apps/v1/chart/guestbook/charts/
 
 <br/>
 
@@ -134,6 +132,8 @@ mongodb-746c86846c-v4wd6    1/1     Running   0          46s
 ```
 
 <br/>
+
+frontend.minikube.local
 
 ![Application](/img/schools/devops/otus/super-intensive/pic-lecture02-pic01.png?raw=true)
 

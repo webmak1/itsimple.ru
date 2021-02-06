@@ -41,8 +41,6 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 
 ### Инсталляция <a href="//sysadm.ru/devops/gitops/cvs/gitlab/setup/ubuntu/">GitLab</a>.
 
-<br/>
-
 ### Настройка <a href="//sysadm.ru/devops/gitops/cvs/gitlab/errors/">docker для запуска job'ов</a>.
 
 <br/>
@@ -55,19 +53,18 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 
 <br/>
 
-Наверное имеет смысл использовать minikube.
-Подумаем над этим.
+Наверное можно будет обойтись minikube.
 
-<br/>
-
-Скрипты для разварачивания локального kubernetes кластера, можно взять <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-ubuntu-20.04">здесь</a>.
+Если нет, скрипты для разварачивания локального kubernetes кластера, можно взять <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-ubuntu-20.04">здесь</a>.
 
 <br/>
 
 ### [01. Сборка и push контейнеров в registry](/schools/devops/otus/super-intensive/build-and-push/)
 
-### [02. Запуск приложения в MiniKube](/schools/devops/otus/super-intensive/run-app-in-minikube/)
+### [02. Запуск приложения в MiniKube с помощью Helm](/schools/devops/otus/super-intensive/run-app-in-minikube/)
 
-### [03. Запуск приложения в MiniKube с помощью GitLab](/schools/devops/otus/super-intensive/run-app-in-minikube-gitlab/)
+### [03. Настрока хоста с GitLab для работы с MiniKube](/schools/devops/otus/super-intensive/setup-gitlab-host-to-work-with-minikube/)
 
-### [04. Модификация Helm Chart, чтобы деплоилась обновленная версия проекта]
+### [04. Запуск приложения с помощью GitLab и Helm в MiniKube](/schools/devops/otus/super-intensive/run-app-in-minikube-with-gitlab/)
+
+### [05. Модификация Helm Chart, чтобы деплоилась обновленная версия проекта]

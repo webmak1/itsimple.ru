@@ -18,7 +18,7 @@ permalink: /videos/devops/implementing-a-full-ci-cd-pipeline/orchestration/
 
 ### 01. Поднимаю локальный kubernetes кластер
 
-Разворачиваю <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-centos7">kubernetes</a> в виртуалках.
+Разворачиваю <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-ubuntu-20.04">kubernetes</a> в виртуалках.
 
 <br/>
 
