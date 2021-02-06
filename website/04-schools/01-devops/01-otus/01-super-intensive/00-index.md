@@ -63,7 +63,7 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 
 ### [02. Запуск приложения в MiniKube с помощью Helm](/schools/devops/otus/super-intensive/run-app-in-minikube/)
 
-### [03. Настрока хоста с GitLab для работы с MiniKube](/schools/devops/otus/super-intensive/setup-gitlab-host-to-work-with-minikube/)
+### [03. Настрока хоста с GitLab для работы с MiniKube](/schools/devops/otus/super-intensive/prepare-gitlab-host-to-work-with-minikube/)
 
 ### [04. Запуск приложения с помощью GitLab и Helm в MiniKube](/schools/devops/otus/super-intensive/run-app-in-minikube-with-gitlab/)
 

@@ -115,6 +115,6 @@ myguestbook-frontend-7f77554fc4-rc7pv   1/1     Running   0          4m2s
 
 <br/>
 
-Должно запускаться приложение на:
+Приложение запускается на:
 
 frontend.minikube.local

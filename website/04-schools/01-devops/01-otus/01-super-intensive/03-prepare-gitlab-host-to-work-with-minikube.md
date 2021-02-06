@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 02. Запуск приложения в MiniKube с помощью Helm
-description: 02. Запуск приложения в MiniKube с помощью Helm
+title: 03. Настрока хоста с GitLab для работы с MiniKube
+description: 03. Настрока хоста с GitLab для работы с MiniKube
 keywords: schools, devops, otus, super intensive, run app in minikube with helm
-permalink: /schools/devops/otus/super-intensive/run-app-in-minikube/
+permalink: /schools/devops/otus/super-intensive/prepare-gitlab-host-to-work-with-minikube/
 ---
 
 # 03. Настрока хоста с GitLab для работы с MiniKube
@@ -40,7 +40,9 @@ ca.key	config	  logs		     proxy-client-ca.key
 
 <br/>
 
-Пока не понял, зачем предлагают делать в инструкциях PORT FORWARD для 8443. У меня сам форвард не заработал.
+### В виртуальной машине с GitLab
+
+В интернетах инструкции, в которых предлагают делать PORT FORWARD для 8443. У меня сам форвард не заработал.
 
 <br/>
 
@@ -99,6 +101,8 @@ devops-app   Ready    control-plane,master   84m   v1.20.2
 
 OK
 
+<!--
+
 <br/>
 
 ### Инструкции
@@ -136,3 +140,5 @@ $ telnet 192.168.99.100 51928
 Trying 192.168.99.100...
 telnet: Unable to connect to remote host: Connection refused
 ```
+
+-->
