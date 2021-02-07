@@ -65,10 +65,10 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 
 ### [03. Настрока хоста с GitLab для работы с MiniKube](/schools/devops/otus/super-intensive/prepare-gitlab-host-to-work-with-minikube/)
 
-### [04. Запуск приложения с помощью GitLab и Helm в MiniKube](/schools/devops/otus/super-intensive/run-app-in-minikube-with-gitlab/)
+### [04. Deploy приложения с помощью GitLab и Helm в MiniKube](/schools/devops/otus/super-intensive/deploy-app-in-minikube-with-gitlab-and-helm/)
 
-### [05. Модификация Helm Chart, чтобы деплоилась обновленная версия проекта]
+### [05. Deploy приложения с помощью GitLab и Helm в MiniKube, обновляющегося при коммите или релизе](/schools/devops/otus/super-intensive/deploy-app-in-minikube-with-gitlab-and-helm-with-updates-on-commit-or-release/)
 
-### [06. Prometheus & Grafaran]
+### [06. Prometheus & Grafaran](/schools/devops/otus/super-intensive/prometheus-and-grafana/)
 
 ### [07. ELK & KIBANA]

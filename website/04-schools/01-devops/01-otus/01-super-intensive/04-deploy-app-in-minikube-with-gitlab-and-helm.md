@@ -1,12 +1,12 @@
 ---
 layout: page
-title: 04. Запуск приложения с помощью GitLab и Helm в MiniKube
-description: 04. Запуск приложения с помощью GitLab и Helm в MiniKube
-keywords: schools, devops, otus, super intensive, run app in minikube gitlab
-permalink: /schools/devops/otus/super-intensive/run-app-in-minikube-with-gitlab/
+title: 04. Deploy приложения с помощью GitLab и Helm в MiniKube
+description: 04. Deploy приложения с помощью GitLab и Helm в MiniKube
+keywords: schools, devops, otus, super intensive, deploy app in minikube, gitlab
+permalink: /schools/devops/otus/super-intensive/deploy-app-in-minikube-with-gitlab-and-helm/
 ---
 
-# 04. Запуск приложения с помощью GitLab и Helm в MiniKube
+# 04. Deploy приложения с помощью GitLab и Helm в MiniKube
 
 <br/>
 
@@ -14,7 +14,7 @@ permalink: /schools/devops/otus/super-intensive/run-app-in-minikube-with-gitlab/
 
 <br/>
 
-GitLab -> Project -> Settings -> CI/CD -> Variables
+**GitLab -> Project -> Settings -> CI/CD -> Variables**
 
 <br/>
 
