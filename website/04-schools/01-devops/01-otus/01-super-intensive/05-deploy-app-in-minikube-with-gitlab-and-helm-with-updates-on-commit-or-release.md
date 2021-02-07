@@ -12,26 +12,41 @@ permalink: /schools/devops/otus/super-intensive/deploy-app-in-minikube-with-gitl
 
 <br/>
 
-templates
+apps/v1/chart/guestbook/charts/frontend/templates/frontend.yaml
+
+<br/>
+
+Прописываю:
 
 ```
+{% raw %}
 image: webmakaka/devops-frontend:{{ .Values.image.tag }}
-
-
-image: webmakaka/devops-backend:{{ .Values.image.tag }}
+{% endraw %}
 ```
 
 <br/>
 
-**Создаю файлы**
+apps/v1/chart/guestbook/charts/backend/templates/backend.yaml
 
 <br/>
+
+Прописываю:
+
+```
+{% raw %}
+image: webmakaka/devops-backend:{{ .Values.image.tag }}
+{% endraw %}
+```
+
+<br/>
+
+### Создаю файлы values.yaml
 
 tag: "2.0" - значение по умолчанию.
 
 <br/>
 
-chart/guestbook/charts/frontend/values.yaml
+**chart/guestbook/charts/frontend/values.yaml**
 
 ```
 image:
@@ -41,7 +56,7 @@ image:
 
 <br/>
 
-chart/guestbook/charts/backend/values.yaml
+**chart/guestbook/charts/backend/values.yaml**
 
 ```
 image:
@@ -51,7 +66,7 @@ image:
 
 <br/>
 
-### Debug
+### Проверка генерации правильного конфига
 
 ```
 $ helm delete myguestbook
@@ -66,6 +81,8 @@ $ export CI_COMMIT_TAG=15aee951
 ```
 $ helm upgrade myguestbook -i apps/v1/chart/guestbook --reuse-values --set-string frontend.image.tag=$CI_COMMIT_TAG --set-string backend.image.tag=$CI_COMMIT_TAG --dry-run --debug
 ```
+
+<br/>
 
 **Возвращает:**
 
@@ -98,20 +115,16 @@ frontend:
 
 <br/>
 
-### Deploy
+### Deploy с помощью GitLab в MiniKube
 
 Наверное, можно сделать разные переменны $KUBE_CONFIG, указывающие на разные кластеры. Либо же, добавить названия dev, test, prod к сервисам и деплоить на 1 хост.
 
-<br/>
-
-Пока буду делать deploy на 1 кластр.
+Пока буду делать deploy на 1 кластер.
 
 <br/>
 
 ```
-
 .gitlab-ci.yml
-
 ```
 
 <br/>

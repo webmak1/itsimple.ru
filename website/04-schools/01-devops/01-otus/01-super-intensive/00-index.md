@@ -53,9 +53,11 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 
 <br/>
 
-Наверное можно будет обойтись minikube.
+Можно обойтись minikube.
 
-Если нет, скрипты для разварачивания локального kubernetes кластера, можно взять <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-ubuntu-20.04">здесь</a>.
+Но при желании, можно использовать скрипты для разварачивания локального kubernetes кластера, можно взять <a href="https://github.com/webmakaka/vagrant-kubernetes-3-node-cluster-ubuntu-20.04">здесь</a>.
+
+С обычным kubernetes тоже работает. Но требуется больше ресурсов.
 
 <br/>
 

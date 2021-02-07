@@ -8,4 +8,4 @@ permalink: /schools/devops/otus/super-intensive/prometheus-and-grafana/
 
 # 06. Prometheus & Grafaran
 
-### Запуск Prometheus (мониторинг) и Grafana (визуализация) в kuberntes cluster с помощью heml (/devops/containers/kubernetes/monitoring/prometheus-and-grafana-test-only/)
+### [Запуск Prometheus (мониторинг) и Grafana (визуализация) в kuberntes cluster с помощью heml](//sysadm.ru/devops/containers/kubernetes/monitoring/prometheus-and-grafana-test-only/)
