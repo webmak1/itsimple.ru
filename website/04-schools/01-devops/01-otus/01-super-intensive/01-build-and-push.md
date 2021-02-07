@@ -40,60 +40,60 @@ REGISTRY_PASSWORD -> <Your Password>
 
 <br/>
 
-```
+```yaml
 image: docker:stable
 
 variables:
-  DOCKER_TLS_CERTDIR: ''
-  DOCKER_HOST: tcp://192.168.0.5:2375
-  DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ''
+    DOCKER_HOST: tcp://192.168.0.5:2375
+    DOCKER_DRIVER: overlay2
 
 services:
-  - docker:stable-dind
+    - docker:stable-dind
 
 before_script:
-  - docker info
-  - echo ${CI_REGISTRY}
-  - echo ${REGISTRY_USER}
-  - echo ${REGISTRY_PASSWORD} | docker login -u ${REGISTRY_USER} --password-stdin ${CI_REGISTRY}
+    - docker info
+    - echo ${CI_REGISTRY}
+    - echo ${REGISTRY_USER}
+    - echo ${REGISTRY_PASSWORD} | docker login -u ${REGISTRY_USER} --password-stdin ${CI_REGISTRY}
 
 stages:
-  - build
-  - release
+    - build
+    - release
 
 backend-build:
-  stage: build
-  except:
-    - tags
-  script:
-    - docker build ./apps/v1/app/backend/ -f ./apps/v1/app/backend/Dockerfile -t webmakaka/devops-backend:$CI_COMMIT_SHORT_SHA
-    - docker push webmakaka/devops-backend:$CI_COMMIT_SHORT_SHA
+    stage: build
+    except:
+        - tags
+    script:
+        - docker build ./apps/v1/app/backend/ -f ./apps/v1/app/backend/Dockerfile -t webmakaka/devops-backend:$CI_COMMIT_SHORT_SHA
+        - docker push webmakaka/devops-backend:$CI_COMMIT_SHORT_SHA
 
 backend-release:
-  stage: release
-  only:
-    - tags
-  script:
-    - docker pull webmakaka/devops-backend:$CI_COMMIT_SHORT_SHA
-    - docker tag webmakaka/devops-backend:$CI_COMMIT_SHORT_SHA webmakaka/devops-backend:$CI_COMMIT_TAG
-    - docker push webmakaka/devops-backend:$CI_COMMIT_TAG
+    stage: release
+    only:
+        - tags
+    script:
+        - docker pull webmakaka/devops-backend:$CI_COMMIT_SHORT_SHA
+        - docker tag webmakaka/devops-backend:$CI_COMMIT_SHORT_SHA webmakaka/devops-backend:$CI_COMMIT_TAG
+        - docker push webmakaka/devops-backend:$CI_COMMIT_TAG
 
 frontend-build:
-  stage: build
-  except:
-    - tags
-  script:
-    - docker build ./apps/v1/app/frontend/ -f ./apps/v1/app/frontend/Dockerfile -t webmakaka/devops-frontend:$CI_COMMIT_SHORT_SHA
-    - docker push webmakaka/devops-frontend:$CI_COMMIT_SHORT_SHA
+    stage: build
+    except:
+        - tags
+    script:
+        - docker build ./apps/v1/app/frontend/ -f ./apps/v1/app/frontend/Dockerfile -t webmakaka/devops-frontend:$CI_COMMIT_SHORT_SHA
+        - docker push webmakaka/devops-frontend:$CI_COMMIT_SHORT_SHA
 
 frontend-release:
-  stage: release
-  only:
-    - tags
-  script:
-    - docker pull webmakaka/devops-frontend:$CI_COMMIT_SHORT_SHA
-    - docker tag webmakaka/devops-frontend:$CI_COMMIT_SHORT_SHA webmakaka/devops-frontend:$CI_COMMIT_TAG
-    - docker push webmakaka/devops-frontend:$CI_COMMIT_TAG
+    stage: release
+    only:
+        - tags
+    script:
+        - docker pull webmakaka/devops-frontend:$CI_COMMIT_SHORT_SHA
+        - docker tag webmakaka/devops-frontend:$CI_COMMIT_SHORT_SHA webmakaka/devops-frontend:$CI_COMMIT_TAG
+        - docker push webmakaka/devops-frontend:$CI_COMMIT_TAG
 ```
 
 <br/>

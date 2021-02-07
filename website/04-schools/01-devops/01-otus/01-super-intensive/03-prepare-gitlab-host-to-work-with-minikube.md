@@ -52,26 +52,26 @@ $ vi /home/gitlab/.kube/config
 
 <br/>
 
-```
+```yaml
 apiVersion: v1
 clusters:
-- cluster:
-    insecure-skip-tls-verify: true
-    server: https://192.168.99.100:8443
-  name: minikube
+    - cluster:
+          insecure-skip-tls-verify: true
+          server: https://192.168.99.100:8443
+      name: minikube
 contexts:
-- context:
-    cluster: minikube
-    user: minikube
-  name: minikube
+    - context:
+          cluster: minikube
+          user: minikube
+      name: minikube
 current-context: minikube
 kind: Config
 preferences: {}
 users:
-- name: minikube
-  user:
-    client-certificate: /home/gitlab/.minikube/profiles/devops-app/client.crt
-    client-key: /home/gitlab/.minikube/profiles/devops-app/client.key
+    - name: minikube
+      user:
+          client-certificate: /home/gitlab/.minikube/profiles/devops-app/client.crt
+          client-key: /home/gitlab/.minikube/profiles/devops-app/client.key
 ```
 
 <br/>
