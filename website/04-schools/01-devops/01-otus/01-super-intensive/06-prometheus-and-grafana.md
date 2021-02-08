@@ -12,11 +12,49 @@ permalink: /schools/devops/otus/super-intensive/prometheus-and-grafana/
 
 <br/>
 
-prometheus-operator - Deprecated
+<!--
+
+```
+$ helm repo add bitnami https://charts.bitnami.com/bitnami
+
+$ helm search repo prometheus-operator
+
+$ helm uninstall prometheus-operator bitnami/prometheus-operator --namespace prometheus
+```
+-->
 
 <br/>
 
-Предлагается обновить HelmChart
+Предлагается обновить HelmChart. Добавить
+
+<br/>
+
+```
+name: http-metrics
+```
+
+<br/>
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+    name: frontend
+    labels:
+        name: frontend
+spec:
+    ports:
+        - protocol: 'TCP'
+          name: http-metrics
+          port: 80
+          targetPort: 4200
+    selector:
+        app: frontend
+```
+
+<!--
+
+<br/>
 
 ```yaml
 kind: Service
@@ -40,6 +78,10 @@ spec:
     targetPort: {{ .Values.service.targetPort }}
 ```
 
+-->
+
+<!--
+
 <br/>
 
 И использовать
@@ -57,11 +99,65 @@ spec:
     namespaceSelector:
         any: true
     endpoints:
-        - port: http-metrics
+    - port: http-metrics
     jobLabel: reddit
     selector:
         matchLabels:
             app: reddit
+```
+
+-->
+
+<br/>
+
+```yaml
+
+$ cat <<EOF | kubectl apply -f -
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+    name: frontend-servicemonitor
+    labels:
+        release: prometheus
+spec:
+    namespaceSelector:
+        any: true
+    endpoints:
+    - port: http-metrics
+      interval: 15s
+    jobLabel: frontend
+    selector:
+        matchLabels:
+            app: frontend
+EOF
+```
+
+<br/>
+
+```
+$ kubectl get ServiceMonitor
+NAME                                                 AGE
+frontend-servicemonitor                              20m
+```
+
+<br/>
+
+http://localhost:9090/config
+
+Появился frontend-servicemonitor
+
+И в Targets
+
+<br/>
+
+Конфигурация Prometheus обновляется
+каждые три минуты.
+
+Применилось ли обновление можно посмотреть командой:
+
+```
+// Не работает
+$ kubectl logs prometheus-kube-prometheus-operator-8559bf778-6w4x7 prometheus-config-reloader
 ```
 
 <br/>
