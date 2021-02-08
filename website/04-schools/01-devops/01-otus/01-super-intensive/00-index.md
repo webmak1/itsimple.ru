@@ -3,7 +3,7 @@ layout: page
 title: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
 description: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
 keywords: Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
-permalink: /schools/devops/otus/super-intensive/
+permalink: /schools/devops/otus/super-intensive/elastic/
 ---
 
 # Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
@@ -36,6 +36,12 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 
 -   Исходников проектов нет. (Предлагаю использовать <a href="https://github.com/webmakaka/Packaging-Applications-with-Helm-for-Kubernetes">похожее</a>. Если кто найдет репо с оригинальными исходниками проекта, поделитесь)
 -   Работа происходит на подготовленных стендах в облаках google. Планируется поднять свое окружение.
+
+<br/>
+
+**UPD.**
+Возможно коды лежат здесь:
+https://github.com/express42/reddit/tree/microservices-docker/
 
 <br/>
 
@@ -73,4 +79,4 @@ https://github.com/webmak1/itsimple.ru/discussions/1
 
 ### [06. Prometheus & Grafaran](/schools/devops/otus/super-intensive/prometheus-and-grafana/)
 
-### [07. ELK & KIBANA]
+### [07. ELK & KIBANA](/schools/devops/otus/super-intensive/elastic/)
