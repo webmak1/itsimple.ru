@@ -12,7 +12,7 @@ permalink: /schools/devops/otus/super-intensive/prometheus-and-grafana/
 
 <br/>
 
-Добился, чтобы node.js приложение возвращало метрики.
+Добился, чтобы node.js приложение (backend) возвращало метрики.
 
 <br/>
 
@@ -37,29 +37,13 @@ http://backend.minikube.local/metrics/
 
 <br/>
 
-<!--
-
-
-```
-$ helm repo add bitnami https://charts.bitnami.com/bitnami
-
-$ helm search repo prometheus-operator
-
-$ helm uninstall prometheus-operator bitnami/prometheus-operator --namespace prometheus
-```
--->
-
-<br/>
-
-HelmChart добавить
+**HelmChart добавить**
 
 <br/>
 
 ```
 name: http-metrics
 ```
-
-<br/>
 
 ```yaml
 apiVersion: v1
@@ -79,6 +63,8 @@ spec:
 ```
 
 <br/>
+
+**Создать ServiceMonitor**
 
 ```yaml
 $ cat <<EOF | kubectl --namespace monitoring apply -f -
@@ -114,15 +100,15 @@ http://localhost:9090/config
 
 <br/>
 
-Появился backend-servic-emonitor
+Появился backend-service-monitor
 
 <br/>
 
 ![Application](/img/schools/devops/otus/super-intensive/pic-lecture04-pic01.png?raw=true)
 
-И в Targets
-
 <br/>
+
+И в Targets
 
 ![Application](/img/schools/devops/otus/super-intensive/pic-lecture04-pic02.png?raw=true)
 
@@ -161,7 +147,7 @@ Events:  <none>
 
 <br/>
 
-Для визуализации предлагают применить dashboard-configmap.yaml
+**Для визуализации предлагают применить dashboard-configmap.yaml**
 
 <br/>
 

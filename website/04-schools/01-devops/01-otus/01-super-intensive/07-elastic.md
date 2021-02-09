@@ -3,7 +3,7 @@ layout: page
 title: 06. Prometheus & Grafaran
 description: 06. Prometheus & Grafaran
 keywords: schools, devops, otus, super intensive, minikube, prometheus, grafana
-permalink: /schools/devops/otus/super-intensive/prometheus-and-grafana/
+permalink: /schools/devops/otus/super-intensive/elastic/
 ---
 
 # 07. ELK & KIBANA
