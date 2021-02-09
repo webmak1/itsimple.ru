@@ -12,7 +12,33 @@ permalink: /schools/devops/otus/super-intensive/prometheus-and-grafana/
 
 <br/>
 
+Добился, чтобы node.js приложение возвращало метрики.
+
+<br/>
+
+```
+$ curl backend.minikube.local/metrics
+# HELP process_cpu_user_seconds_total Total user CPU time spent in seconds.
+# TYPE process_cpu_user_seconds_total counter
+process_cpu_user_seconds_total{app="prometheus-nodejs-app"} 0.8757879999999999
+
+# HELP process_cpu_system_seconds_total Total system CPU time spent in seconds.
+# TYPE process_cpu_system_seconds_total counter
+process_cpu_system_seconds_total{app="prometheus-nodejs-app"} 0.291205
+
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total{app="prometheus-nodejs-app"} 1.166993
+```
+
+<br/>
+
+http://backend.minikube.local/metrics/
+
+<br/>
+
 <!--
+
 
 ```
 $ helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -25,7 +51,7 @@ $ helm uninstall prometheus-operator bitnami/prometheus-operator --namespace pro
 
 <br/>
 
-Предлагается обновить HelmChart. Добавить
+HelmChart добавить
 
 <br/>
 
@@ -39,114 +65,66 @@ name: http-metrics
 apiVersion: v1
 kind: Service
 metadata:
-    name: frontend
+    name: backend
     labels:
-        name: frontend
+        app: backend
 spec:
     ports:
         - protocol: 'TCP'
           name: http-metrics
           port: 80
-          targetPort: 4200
+          targetPort: 3000
     selector:
-        app: frontend
+        app: backend
 ```
-
-<!--
 
 <br/>
 
 ```yaml
-kind: Service
-apiVersion: v1
-metadata:
-  name: {{ .Chart.Name }}
-  labels:
-    {{- range $key, $value := .Values.labels }}
-      {{ $key }}: {{ $value }}
-    {{- end }}
-spec:
-  type: {{ .Values.service.type }}
-  selector:
-    {{- range $key, $value := .Values.labels }}
-      {{ $key }}: {{ $value }}
-    {{- end }}
-  ports:
-  - protocol: TCP
-    name: http-metrics
-    port: {{ .Values.service.port }}
-    targetPort: {{ .Values.service.targetPort }}
-```
-
--->
-
-<!--
-
-<br/>
-
-И использовать
-
-<br/>
-
-```yaml
+$ cat <<EOF | kubectl --namespace monitoring apply -f -
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-    name: reddit-servicemonitor
-    labels:
-        release: prometheus
+    name: backend-service-monitor
 spec:
-    namespaceSelector:
-        any: true
-    endpoints:
-    - port: http-metrics
-    jobLabel: reddit
     selector:
         matchLabels:
-            app: reddit
-```
-
--->
-
-<br/>
-
-```yaml
-
-$ cat <<EOF | kubectl apply -f -
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-    name: frontend-servicemonitor
-    labels:
-        release: prometheus
-spec:
+          app: backend
     namespaceSelector:
-        any: true
+      matchNames:
+      - default
     endpoints:
     - port: http-metrics
       interval: 15s
-    jobLabel: frontend
-    selector:
-        matchLabels:
-            app: frontend
+    jobLabel: backend
 EOF
 ```
 
 <br/>
 
 ```
-$ kubectl get ServiceMonitor
+$ kubectl --namespace monitoring get ServiceMonitor
 NAME                                                 AGE
-frontend-servicemonitor                              20m
+backend-service-monitor                              30s
 ```
 
 <br/>
 
 http://localhost:9090/config
 
-Появился frontend-servicemonitor
+<br/>
+
+Появился backend-servic-emonitor
+
+<br/>
+
+![Application](/img/schools/devops/otus/super-intensive/pic-lecture04-pic01.png?raw=true)
 
 И в Targets
+
+<br/>
+
+![Application](/img/schools/devops/otus/super-intensive/pic-lecture04-pic02.png?raw=true)
 
 <br/>
 
@@ -157,13 +135,38 @@ http://localhost:9090/config
 
 ```
 // Не работает
-$ kubectl logs prometheus-kube-prometheus-operator-8559bf778-6w4x7 prometheus-config-reloader
+$ kubectl --namespace monitoring logs prometheus-stack-kube-prom-operator-56c4476bdd-5j2tm prometheus-config-reloader
+```
+
+<br/>
+
+```
+$ kubectl describe endpoints backend
+Name:         backend
+Namespace:    default
+Labels:       app=backend
+              app.kubernetes.io/managed-by=skaffold
+              skaffold.dev/run-id=52e10050-87b3-4d0d-8cc1-66fc5d657b24
+Annotations:  endpoints.kubernetes.io/last-change-trigger-time: 2021-02-09T16:42:06Z
+Subsets:
+  Addresses:          172.17.0.13
+  NotReadyAddresses:  <none>
+  Ports:
+    Name          Port  Protocol
+    ----          ----  --------
+    http-metrics  3000  TCP
+
+Events:  <none>
 ```
 
 <br/>
 
 Для визуализации предлагают применить dashboard-configmap.yaml
 
+<br/>
+
 https://gist.githubusercontent.com/vitkhab/02af337e83e66f33903f0320938135f0/raw/73b6c177be97b89e0749bb5ed122b452da094997/reddit-dashboard-configmap.yml
+
+<br/>
 
 Должен появиться в Grafana dashboard Reddit Monitoring
