@@ -45,3 +45,12 @@ https://www.udemy.com/course/the-docker-for-devops-course-from-development-to-pr
 Под вопросом. Материал от индуса. Выкачивать выкачивали, но до разбора не дошло.
 
 https://www.udemy.com/course/valaxy-devops/
+
+<br/>
+
+### Толковые YouTube каналы
+
+https://www.youtube.com/c/wenkatn-justmeandopensource/videos
+https://www.youtube.com/c/MarcelDempers/videos
+https://www.youtube.com/c/TheDevOpsToolkitSeries/videos
+https://www.youtube.com/c/GeertBaeke/videos
