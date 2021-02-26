@@ -1,22 +1,32 @@
 ---
 layout: page
-title: Предложения
+title: Предложения по изучению материалов по DevOps
+description: Предложения по изучению материалов по DevOps
+keywords: devops, рекомендации по изучению
 permalink: /suggestions/
 ---
 
-# Предложения от Marley
+# Предложения по изучению материалов по DevOps (от Marley)
 
-Ниже материалы, которые я смотрел по теме и которые понравились.
+Ниже материалы, которые я смотрел, и которые по моему мнению заслуживают внимания.
 
 <br/>
 
 ### Docker for DevOps: From Development to Production
 
-Там где брал удалили. Но куча мест в интернете еще осталась
+https://www.udemy.com/course/the-docker-for-devops-course-from-development-to-production/
 
 <br/>
 
-### [Stephen Grider] Docker and Kubernetes: The Complete Guide [2018, ENG]
+### [A Cloud Guru, Linux Academy] Внедрение полного конвейера CI/CD [RUS, 2020]
+
+<br/>
+
+### [Otus] Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
+
+<br/>
+
+### [Stephen Grider] Docker and Kubernetes: The Complete Guide [ENG, 2018]
 
 Достаточно интересный и практический курс по работе с контейнерами. Я научился чему-то новому.
 
@@ -26,13 +36,8 @@ permalink: /suggestions/
 
 <br/>
 
-### Projects in Docker [Video]
+### DevOps Project: CI/CD with Jenkins Ansible Docker Kubernetes
 
-<a href="https://github.com/webmakaka/Projects-in-Docker">Здесь</a>
+Под вопросом. Материал от индуса. Выкачивать выкачивали, но до разбора не дошло.
 
-<br/>
-
-### Docker for Web Developers [2016, ENG]
-
-<a href="https://bitbucket.org/marley-nodejs/docker-for-web-developers/">Здесь</a>
-
+https://www.udemy.com/course/valaxy-devops/

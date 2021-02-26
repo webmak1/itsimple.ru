@@ -37,7 +37,7 @@ http://backend.minikube.local/metrics/
 
 <br/>
 
-**HelmChart добавить**
+**В HelmChart добавить http-metrics**
 
 <br/>
 
@@ -54,8 +54,8 @@ metadata:
         app: backend
 spec:
     ports:
-        - protocol: 'TCP'
-          name: http-metrics
+        - name: http-metrics
+          protocol: 'TCP'
           port: 80
           targetPort: 3000
     selector:
