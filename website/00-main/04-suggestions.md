@@ -20,9 +20,13 @@ https://www.udemy.com/course/the-docker-for-devops-course-from-development-to-pr
 
 ### [A Cloud Guru, Linux Academy] Внедрение полного конвейера CI/CD [RUS, 2020]
 
+[Подробнее](/videos/devops/implementing-a-full-ci-cd-pipeline/)
+
 <br/>
 
 ### [Otus] Супер-интенсив "CI/CD или Непрерывная поставка с Docker и Kubernetes" [RUS, 2021]
+
+[Подробнее](/schools/devops/otus/super-intensive/)
 
 <br/>
 
