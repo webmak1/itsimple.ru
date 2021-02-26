@@ -48,9 +48,9 @@ https://www.udemy.com/course/valaxy-devops/
 
 <br/>
 
-### Толковые YouTube каналы
+### Толковые YouTube каналы по DevOps
 
-https://www.youtube.com/c/wenkatn-justmeandopensource/videos
-https://www.youtube.com/c/MarcelDempers/videos
-https://www.youtube.com/c/TheDevOpsToolkitSeries/videos
-https://www.youtube.com/c/GeertBaeke/videos
+-   https://www.youtube.com/c/wenkatn-justmeandopensource/videos
+-   https://www.youtube.com/c/MarcelDempers/videos
+-   https://www.youtube.com/c/TheDevOpsToolkitSeries/videos
+-   https://www.youtube.com/c/GeertBaeke/videos
