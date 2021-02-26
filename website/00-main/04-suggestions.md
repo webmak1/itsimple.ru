@@ -48,6 +48,10 @@ https://www.udemy.com/course/valaxy-devops/
 
 <br/>
 
+### [informit.com / LiveLessons] 11 Steps to Awesome with Kubernetes, Istio, and Knative [2019, ENG]
+
+<br/>
+
 ### Толковые YouTube каналы по DevOps
 
 -   https://www.youtube.com/c/wenkatn-justmeandopensource/videos
